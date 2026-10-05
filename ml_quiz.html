@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Machine Learning Quiz</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0a0a0f;
+    --surface: #13131a;
+    --surface2: #1c1c26;
+    --border: rgba(255,255,255,0.07);
+    --border2: rgba(255,255,255,0.13);
+    --accent: #7c6ff7;
+    --accent2: #a78bfa;
+    --accent-glow: rgba(124,111,247,0.25);
+    --green: #34d399;
+    --green-bg: rgba(52,211,153,0.1);
+    --red: #f87171;
+    --red-bg: rgba(248,113,113,0.1);
+    --amber: #fbbf24;
+    --text: #f0eff8;
+    --text2: #8b8a9e;
+    --text3: #5a5970;
+    --radius: 14px;
+    --radius-sm: 8px;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  body::before {
+    content: '';
+    position: fixed;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(124,111,247,0.12) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* ── LANDING ── */
+  #landing {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 60px;
+    animation: fadeUp 0.6s ease both;
+  }
+
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(124,111,247,0.12);
+    border: 1px solid rgba(124,111,247,0.3);
+    border-radius: 99px;
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--accent2);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+  }
+
+  .badge-dot {
+    width: 6px; height: 6px;
+    background: var(--accent);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%,100%{opacity:1;transform:scale(1)}
+    50%{opacity:0.5;transform:scale(0.8)}
+  }
+
+  .landing-title {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(36px, 6vw, 56px);
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #f0eff8 0%, var(--accent2) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .landing-sub {
+    font-size: 16px;
+    color: var(--text2);
+    line-height: 1.7;
+    max-width: 440px;
+    margin-bottom: 40px;
+  }
+
+  .topics-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 48px;
+    max-width: 500px;
+  }
+
+  .topic-chip {
+    background: var(--surface);
+    border: 1px solid var(--border2);
+    border-radius: 99px;
+    padding: 6px 14px;
+    font-size: 12px;
+    color: var(--text2);
+    font-weight: 400;
+  }
+
+  .start-btn {
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius);
+    padding: 16px 48px;
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0 40px var(--accent-glow);
+    letter-spacing: 0.01em;
+  }
+
+  .start-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 50px rgba(124,111,247,0.4);
+  }
+
+  .start-btn:active { transform: translateY(0); }
+
+  .stats-row {
+    display: flex;
+    gap: 32px;
+    margin-top: 40px;
+  }
+
+  .stat-item { text-align: center; }
+  .stat-item .num {
+    font-family: 'Syne', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--accent2);
+  }
+  .stat-item .lbl { font-size: 12px; color: var(--text3); margin-top: 2px; }
+
+  /* ── QUIZ ── */
+  #quiz { display: none; animation: fadeUp 0.4s ease both; }
+
+  .quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+  }
+
+  .q-counter {
+    font-family: 'Syne', sans-serif;
+    font-size: 13px;
+    color: var(--text3);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+  }
+
+  .q-counter span { color: var(--accent2); }
+
+  .score-live {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: var(--text2);
+  }
+
+  .score-live strong { color: var(--green); font-family: 'Syne', sans-serif; }
+
+  .progress-wrap {
+    background: var(--surface2);
+    border-radius: 99px;
+    height: 3px;
+    margin-bottom: 36px;
+    overflow: hidden;
+  }
+
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    border-radius: 99px;
+    transition: width 0.5s cubic-bezier(0.4,0,0.2,1);
+  }
+
+  .topic-tag {
+    display: inline-block;
+    background: rgba(124,111,247,0.1);
+    border: 1px solid rgba(124,111,247,0.2);
+    color: var(--accent2);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    padding: 4px 12px;
+    border-radius: 99px;
+    margin-bottom: 16px;
+  }
+
+  .question-text {
+    font-family: 'Syne', sans-serif;
+    font-size: clamp(17px, 2.5vw, 20px);
+    font-weight: 600;
+    line-height: 1.5;
+    color: var(--text);
+    margin-bottom: 28px;
+    letter-spacing: -0.01em;
+  }
+
+  .options { display: flex; flex-direction: column; gap: 10px; }
+
+  .option-btn {
+    background: var(--surface);
+    border: 1px solid var(--border2);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    text-align: left;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    color: var(--text2);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.55;
+    font-weight: 400;
+  }
+
+  .option-btn:hover:not(:disabled) {
+    border-color: rgba(124,111,247,0.4);
+    background: rgba(124,111,247,0.06);
+    color: var(--text);
+    transform: translateX(3px);
+  }
+
+  .option-letter {
+    min-width: 26px;
+    height: 26px;
+    border-radius: var(--radius-sm);
+    background: var(--surface2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Syne', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--text3);
+    flex-shrink: 0;
+    transition: all 0.2s;
+    margin-top: 1px;
+  }
+
+  .option-btn.correct {
+    background: var(--green-bg);
+    border-color: rgba(52,211,153,0.4);
+    color: var(--green);
+  }
+  .option-btn.correct .option-letter {
+    background: var(--green);
+    color: #0a0a0f;
+  }
+
+  .option-btn.wrong {
+    background: var(--red-bg);
+    border-color: rgba(248,113,113,0.4);
+    color: var(--red);
+    animation: shake 0.35s ease;
+  }
+  .option-btn.wrong .option-letter {
+    background: var(--red);
+    color: #0a0a0f;
+  }
+
+  .option-btn.reveal {
+    background: var(--green-bg);
+    border-color: rgba(52,211,153,0.25);
+    color: rgba(52,211,153,0.7);
+    opacity: 0.7;
+  }
+  .option-btn.reveal .option-letter {
+    background: rgba(52,211,153,0.4);
+    color: var(--green);
+  }
+
+  .option-btn:disabled { cursor: default; }
+
+  @keyframes shake {
+    0%,100%{transform:translateX(0)}
+    20%{transform:translateX(-6px)}
+    40%{transform:translateX(6px)}
+    60%{transform:translateX(-4px)}
+    80%{transform:translateX(4px)}
+  }
+
+  .explanation-box {
+    margin-top: 16px;
+    background: var(--surface2);
+    border: 1px solid var(--border2);
+    border-left: 3px solid var(--accent);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    font-size: 13.5px;
+    color: var(--text2);
+    line-height: 1.7;
+    display: none;
+    animation: fadeUp 0.3s ease both;
+  }
+
+  .explanation-box.show { display: block; }
+  .explanation-box strong { color: var(--accent2); font-weight: 500; }
+
+  .exp-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  .next-btn {
+    margin-top: 24px;
+    width: 100%;
+    padding: 15px;
+    border-radius: var(--radius);
+    border: 1px solid rgba(124,111,247,0.35);
+    background: rgba(124,111,247,0.08);
+    color: var(--accent2);
+    font-family: 'Syne', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    display: none;
+    transition: all 0.2s;
+    letter-spacing: 0.03em;
+  }
+
+  .next-btn:hover {
+    background: rgba(124,111,247,0.18);
+    border-color: rgba(124,111,247,0.6);
+    transform: translateY(-1px);
+  }
+
+  .next-btn.show { display: block; animation: fadeUp 0.3s ease both; }
+
+  /* ── RESULT ── */
+  #result { display: none; animation: fadeUp 0.5s ease both; }
+
+  .result-header { text-align: center; padding: 40px 0 32px; }
+
+  .score-circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 3px solid var(--accent);
+    box-shadow: 0 0 40px var(--accent-glow), inset 0 0 40px rgba(124,111,247,0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 28px;
+  }
+
+  .score-circle .big {
+    font-family: 'Syne', sans-serif;
+    font-size: 36px;
+    font-weight: 800;
+    color: var(--accent2);
+    line-height: 1;
+  }
+
+  .score-circle .of {
+    font-size: 12px;
+    color: var(--text3);
+    margin-top: 4px;
+  }
+
+  .result-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 28px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    margin-bottom: 8px;
+  }
+
+  .result-sub { font-size: 14px; color: var(--text2); }
+
+  .grade-pill {
+    display: inline-block;
+    padding: 6px 22px;
+    border-radius: 99px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin: 16px 0;
+  }
+
+  .stats-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 32px 0;
+  }
+
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 16px;
+    text-align: center;
+  }
+
+  .stat-card .val {
+    font-family: 'Syne', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 4px;
+  }
+
+  .stat-card .lab { font-size: 12px; color: var(--text3); }
+
+  .breakdown-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 24px;
+    margin-bottom: 24px;
+  }
+
+  .breakdown-title {
+    font-family: 'Syne', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text3);
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .tb-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+    font-size: 13px;
+  }
+
+  .tb-row:last-child { margin-bottom: 0; }
+
+  .tb-label {
+    width: 170px;
+    color: var(--text2);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    flex-shrink: 0;
+  }
+
+  .tb-track {
+    flex: 1;
+    background: var(--surface2);
+    border-radius: 99px;
+    height: 5px;
+    overflow: hidden;
+  }
+
+  .tb-fill {
+    height: 100%;
+    border-radius: 99px;
+    background: linear-gradient(90deg, var(--accent), var(--accent2));
+    transition: width 1s cubic-bezier(0.4,0,0.2,1);
+  }
+
+  .tb-pct {
+    width: 38px;
+    text-align: right;
+    font-family: 'Syne', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--text);
+    flex-shrink: 0;
+  }
+
+  .retry-btn {
+    width: 100%;
+    padding: 16px;
+    border-radius: var(--radius);
+    border: none;
+    background: var(--accent);
+    color: #fff;
+    font-family: 'Syne', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 0 30px var(--accent-glow);
+    letter-spacing: 0.02em;
+  }
+
+  .retry-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 40px rgba(124,111,247,0.45);
+  }
+
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  /* scrollbar */
+  ::-webkit-scrollbar { width: 5px; }
+  ::-webkit-scrollbar-track { background: var(--bg); }
+  ::-webkit-scrollbar-thumb { background: var(--surface2); border-radius: 99px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <!-- LANDING -->
+  <div id="landing">
+    <div class="badge"><span class="badge-dot"></span>Machine Learning</div>
+    <h1 class="landing-title">Test Your ML Knowledge</h1>
+    <p class="landing-sub">20 critical theoretical questions covering core supervised learning concepts, evaluation metrics, and clustering.</p>
+    <div class="topics-grid">
+      <span class="topic-chip">Supervised Learning</span>
+      <span class="topic-chip">Linear Regression</span>
+      <span class="topic-chip">Logistic Regression</span>
+      <span class="topic-chip">Decision Trees</span>
+      <span class="topic-chip">Random Forest</span>
+      <span class="topic-chip">Hyperparameter Tuning</span>
+      <span class="topic-chip">Evaluation Metrics</span>
+      <span class="topic-chip">Clustering</span>
+    </div>
+    <button class="start-btn" onclick="startQuiz()">Begin Quiz →</button>
+    <div class="stats-row">
+      <div class="stat-item"><div class="num">20</div><div class="lbl">Questions</div></div>
+      <div class="stat-item"><div class="num">8</div><div class="lbl">Topics</div></div>
+      <div class="stat-item"><div class="num">~8</div><div class="lbl">Minutes</div></div>
+    </div>
+  </div>
+
+  <!-- QUIZ -->
+  <div id="quiz">
+    <div class="quiz-header">
+      <div class="q-counter">Q <span id="qnum">1</span> / 20</div>
+      <div class="score-live">Score: <strong id="live-score">0</strong></div>
+    </div>
+    <div class="progress-wrap"><div class="progress-fill" id="prog" style="width:0%"></div></div>
+    <div id="topic-tag" class="topic-tag"></div>
+    <div id="question-text" class="question-text"></div>
+    <div class="options" id="options"></div>
+    <div class="explanation-box" id="expbox">
+      <div class="exp-label">⚡ Explanation</div>
+      <span id="exp-text"></span>
+    </div>
+    <button class="next-btn" id="next-btn" onclick="nextQ()">Next Question →</button>
+  </div>
+
+  <!-- RESULT -->
+  <div id="result">
+    <div class="result-header">
+      <div class="score-circle">
+        <div class="big" id="res-score"></div>
+        <div class="of">out of 20</div>
+      </div>
+      <h2 class="result-title" id="res-title"></h2>
+      <div class="result-sub" id="res-sub"></div>
+      <div class="grade-pill" id="grade-pill"></div>
+    </div>
+
+    <div class="stats-cards">
+      <div class="stat-card">
+        <div class="val" id="rc-pct" style="color:var(--accent2)"></div>
+        <div class="lab">Accuracy</div>
+      </div>
+      <div class="stat-card">
+        <div class="val" id="rc-correct" style="color:var(--green)"></div>
+        <div class="lab">Correct</div>
+      </div>
+      <div class="stat-card">
+        <div class="val" id="rc-wrong" style="color:var(--red)"></div>
+        <div class="lab">Incorrect</div>
+      </div>
+    </div>
+
+    <div class="breakdown-section">
+      <div class="breakdown-title">Performance by topic</div>
+      <div id="breakdown"></div>
+    </div>
+
+    <button class="retry-btn" onclick="restart()">Retake Quiz →</button>
+  </div>
+
+</div>
+
+<script>
+const questions = [
+  {topic:"Supervised Learning",q:"What is the fundamental assumption of supervised learning?",opts:["The model learns from labeled input-output pairs","The model discovers hidden structures without any labels","The model improves only through reinforcement signals","The model requires no training data at all"],ans:0,exp:"Supervised learning trains a model using labeled data where each input has a known correct output. The model learns the mapping from inputs to outputs so it can generalize to unseen examples."},
+  {topic:"Linear Regression",q:"Which of the following best describes overfitting in a linear regression model?",opts:["The model performs poorly on both training and test data","The model captures noise in training data, hurting generalization","The model has too few parameters to capture patterns","The model converges too slowly during training"],ans:1,exp:"Overfitting occurs when a model learns the training data — including its noise — too well. It performs excellently on training data but poorly on unseen test data because it hasn't truly generalized."},
+  {topic:"Linear Regression",q:"What does the coefficient of determination (R²) measure in linear regression?",opts:["The slope of the regression line","The proportion of variance in the target explained by the model","The total error between predictions and actuals","The number of features used in the model"],ans:1,exp:"R² tells us what proportion of variance in the dependent variable is explained by the independent variables. An R² of 1 means perfect fit; 0 means the model explains none of the variance."},
+  {topic:"Linear Regression",q:"What is multicollinearity and why is it a problem in linear regression?",opts:["When the target variable has multiple classes","When independent features are highly correlated with each other","When the dataset has too many rows","When residuals follow a normal distribution"],ans:1,exp:"Multicollinearity occurs when two or more predictors are highly correlated. This makes it hard to isolate each predictor's individual effect, leading to unstable and unreliable coefficient estimates."},
+  {topic:"Logistic Regression",q:"Why is logistic regression a classification algorithm despite the name suggesting regression?",opts:["It predicts continuous probabilities only","It maps outputs through a sigmoid function to produce class probabilities","It uses mean squared error as its loss function","It cannot handle more than two classes"],ans:1,exp:"Logistic regression applies a sigmoid function to a linear combination of inputs, squashing the output to a probability between 0 and 1, which is then thresholded for class prediction."},
+  {topic:"Logistic Regression",q:"What is the primary loss function used to train logistic regression?",opts:["Mean squared error","Mean absolute error","Binary cross-entropy (log loss)","Hinge loss"],ans:2,exp:"Logistic regression uses binary cross-entropy (log loss). It heavily penalizes confident wrong predictions, making it well-suited for probability estimation in classification tasks."},
+  {topic:"Logistic Regression",q:"In multiclass logistic regression, the sigmoid function is typically replaced by which function?",opts:["ReLU","Tanh","Softmax","Leaky ReLU"],ans:2,exp:"For multiclass problems, logistic regression uses softmax instead of sigmoid. Softmax converts raw scores into a probability distribution over all classes, ensuring probabilities sum to exactly 1."},
+  {topic:"Decision Trees",q:"What does 'information gain' represent when splitting a decision tree node?",opts:["The depth added to the tree after a split","The reduction in impurity achieved by a split","The number of data points in a leaf node","The total number of branches in the tree"],ans:1,exp:"Information gain measures how much a split reduces the impurity (disorder) of data. A split is chosen to maximize information gain — the resulting child nodes should be as pure as possible."},
+  {topic:"Decision Trees",q:"Which is a key disadvantage of decision trees compared to ensemble methods?",opts:["They cannot handle categorical variables","They are prone to high variance and overfitting","They are too slow to train on large datasets","They cannot be used for regression tasks"],ans:1,exp:"Decision trees are known for high variance — they can overfit heavily, especially when grown deep. Small changes in data can produce very different trees. Ensemble methods like random forests address this."},
+  {topic:"Decision Trees",q:"What does 'pruning' mean in the context of decision trees?",opts:["Adding more features to each node","Removing branches that have little predictive power to reduce overfitting","Increasing the depth of the tree","Replacing numerical splits with categorical ones"],ans:1,exp:"Pruning is a regularization technique that removes branches adding complexity but improving accuracy only slightly, trading a small loss in training performance for better generalization on unseen data."},
+  {topic:"Random Forest",q:"What is the core idea behind the 'bagging' technique used in random forests?",opts:["Training one deep tree on the full dataset","Training multiple models on random subsets of data and aggregating predictions","Applying gradient descent to tree leaf values","Splitting data strictly by class label"],ans:1,exp:"Bagging (Bootstrap Aggregating) trains multiple models on different random samples (with replacement). Predictions are then aggregated (majority vote or average), reducing variance and improving generalization."},
+  {topic:"Random Forest",q:"How does a random forest reduce correlation between its trees beyond just bagging?",opts:["By using different target variables for each tree","By randomly selecting a subset of features at each split","By limiting all trees to the same maximum depth","By training trees sequentially on residuals"],ans:1,exp:"At each split, only a random subset of features is considered. This ensures trees are less correlated — they can't always rely on the same strong features, producing more diverse and collectively stronger predictions."},
+  {topic:"Random Forest",q:"Which is a key advantage of random forests over a single decision tree?",opts:["Random forests are always faster to train","Random forests require no hyperparameter tuning","Random forests have lower variance due to ensemble averaging","Random forests can only handle numerical features"],ans:2,exp:"By averaging predictions from many diverse trees, random forests dramatically reduce variance compared to a single tree, making them robust to overfitting and more stable across different datasets."},
+  {topic:"Hyperparameter Tuning",q:"What is the fundamental difference between a model parameter and a hyperparameter?",opts:["Parameters are set by the user; hyperparameters are learned from data","Hyperparameters are set before training; parameters are learned from data","Both are learned during training but at different stages","Hyperparameters only apply to neural networks"],ans:1,exp:"Model parameters (like weights) are learned from training data. Hyperparameters (like learning rate, tree depth) are configuration settings chosen before training that control the learning process itself."},
+  {topic:"Hyperparameter Tuning",q:"What is the risk of using test data to select the best hyperparameters?",opts:["The model will train too slowly","The test data will be memorized by the model","The test performance becomes an optimistic and unreliable estimate of real-world performance","There is no risk; test data is suitable for tuning"],ans:2,exp:"Using test data for hyperparameter selection causes data leakage. If the test set influences model choices, the reported test performance becomes overly optimistic and doesn't reflect true generalization ability."},
+  {topic:"Hyperparameter Tuning",q:"In k-fold cross-validation, what is the purpose of rotating which fold serves as the validation set?",opts:["To reduce training time by using less data each run","To ensure every data point is used for both training and validation across folds","To eliminate the need for a separate test set","To increase the number of hyperparameters tested"],ans:1,exp:"K-fold cross-validation rotates the validation fold so every data point is used for validation exactly once and for training k-1 times, giving a more reliable performance estimate than a single train-validation split."},
+  {topic:"Evaluation Metrics",q:"Why is accuracy alone misleading for a highly imbalanced dataset (e.g., 99% class A, 1% class B)?",opts:["Accuracy cannot be computed for binary classification","A model predicting class A for everything achieves 99% accuracy while being completely useless","Accuracy penalizes large models more than small ones","Accuracy requires normalized features to work correctly"],ans:1,exp:"On a 99/1 imbalanced dataset, a naive model always predicting the majority class gets 99% accuracy — but never detects minority class instances. Precision, recall, and F1-score reveal the true performance."},
+  {topic:"Evaluation Metrics",q:"What does high recall but low precision indicate about a classification model?",opts:["The model misses most positives but is precise when it predicts positive","The model finds most positives but also generates many false positives","The model perfectly classifies the majority class only","The model has underfitted the training data"],ans:1,exp:"High recall means the model identifies most actual positives (few false negatives). Low precision means many positive predictions are wrong (many false positives). Common in medical screening — catch all cases even at the cost of false alarms."},
+  {topic:"Clustering",q:"What is the main difference between supervised classification and unsupervised clustering?",opts:["Clustering always produces exactly two groups","Clustering finds natural groupings without predefined labels, while classification predicts known categories","Clustering requires more labeled data than classification","Classification cannot handle more than 10 categories"],ans:1,exp:"Classification is supervised — the model learns from labeled examples of known categories. Clustering is unsupervised — there are no labels, and the algorithm discovers natural groupings or structure in data on its own."},
+  {topic:"Clustering",q:"What is the 'elbow method' used for in k-means clustering?",opts:["To determine the optimal learning rate","To choose the right number of clusters by finding where adding clusters gives diminishing returns","To remove outliers before clustering","To normalize features before running the algorithm"],ans:1,exp:"The elbow method plots inertia (within-cluster sum of squared distances) against k. The 'elbow' — where the curve bends sharply — indicates optimal k, as adding more clusters beyond that point provides little improvement."}
+];
+
+let current=0, score=0, answered=false;
+const topicScores={};
+questions.forEach(q=>{if(!topicScores[q.topic])topicScores[q.topic]={c:0,t:0};topicScores[q.topic].t++;});
+
+function startQuiz(){
+  document.getElementById('landing').style.display='none';
+  document.getElementById('quiz').style.display='block';
+  renderQ();
+}
+
+function renderQ(){
+  const q=questions[current];
+  answered=false;
+  document.getElementById('qnum').textContent=current+1;
+  document.getElementById('live-score').textContent=score;
+  document.getElementById('prog').style.width=((current/20)*100)+'%';
+  document.getElementById('topic-tag').textContent=q.topic;
+  document.getElementById('question-text').textContent=q.q;
+  document.getElementById('exp-text').textContent=q.exp;
+  document.getElementById('expbox').classList.remove('show');
+  document.getElementById('next-btn').classList.remove('show');
+  const opts=document.getElementById('options');
+  opts.innerHTML=q.opts.map((o,i)=>`
+    <button class="option-btn" onclick="choose(${i})">
+      <span class="option-letter">${String.fromCharCode(65+i)}</span>
+      <span>${o}</span>
+    </button>`).join('');
+}
+
+function choose(idx){
+  if(answered)return;
+  answered=true;
+  const q=questions[current];
+  const btns=document.querySelectorAll('.option-btn');
+  btns.forEach((b,i)=>{
+    b.disabled=true;
+    if(i===q.ans) b.classList.add(idx===q.ans?'correct':'reveal');
+    else if(i===idx) b.classList.add('wrong');
+  });
+  if(idx===q.ans){score++;topicScores[q.topic].c++;}
+  else{document.getElementById('expbox').classList.add('show');}
+  document.getElementById('next-btn').textContent=current===19?'See Results →':'Next Question →';
+  document.getElementById('next-btn').classList.add('show');
+}
+
+function nextQ(){
+  current++;
+  if(current>=20){showResult();return;}
+  renderQ();
+}
+
+function showResult(){
+  document.getElementById('quiz').style.display='none';
+  const res=document.getElementById('result');
+  res.style.display='block';
+  const pct=Math.round((score/20)*100);
+  document.getElementById('res-score').textContent=score;
+  document.getElementById('rc-pct').textContent=pct+'%';
+  document.getElementById('rc-correct').textContent=score;
+  document.getElementById('rc-wrong').textContent=20-score;
+
+  let title,sub,grade,gc,gbc;
+  if(pct>=90){title='Outstanding!';sub='You have a strong grasp of ML fundamentals.';grade='Excellent';gc='#173404';gbc='rgba(52,211,153,0.15)';}
+  else if(pct>=75){title='Well done!';sub='Good understanding with a few gaps to fill.';grade='Good';gc='#7c6ff7';gbc='rgba(124,111,247,0.15)';}
+  else if(pct>=50){title='Decent effort';sub='Review the topics where you struggled.';grade='Average';gc='#92400e';gbc='rgba(251,191,36,0.15)';}
+  else{title='Keep studying';sub='Revisit the core concepts and try again.';grade='Needs Revision';gc='#7f1d1d';gbc='rgba(248,113,113,0.15)';}
+
+  document.getElementById('res-title').textContent=title;
+  document.getElementById('res-sub').textContent=sub;
+  const gp=document.getElementById('grade-pill');
+  gp.textContent=grade;
+  gp.style.background=gbc;
+  gp.style.color=gc;
+  gp.style.border='1px solid '+gc+'44';
+
+  const bd=document.getElementById('breakdown');
+  bd.innerHTML=Object.entries(topicScores).map(([t,v])=>{
+    const p=Math.round((v.c/v.t)*100);
+    return `<div class="tb-row">
+      <span class="tb-label">${t}</span>
+      <div class="tb-track"><div class="tb-fill" style="width:${p}%"></div></div>
+      <span class="tb-pct">${p}%</span>
+    </div>`;
+  }).join('');
+  setTimeout(()=>{document.querySelectorAll('.tb-fill').forEach(el=>el.style.width=el.style.width);},50);
+}
+
+function restart(){
+  current=0;score=0;answered=false;
+  Object.keys(topicScores).forEach(k=>{topicScores[k].c=0;});
+  document.getElementById('result').style.display='none';
+  document.getElementById('landing').style.display='flex';
+}
+</script>
+</body>
+</html>
