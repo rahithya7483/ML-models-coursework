@@ -1,0 +1,501 @@
+order_id,user_id,restaurant_id,restaurant_name,cuisine,city,quantity,unit_price,total_amount,delivery_time_mins,rating,payment_mode,status,order_time,is_first_order
+ZOM00001,USR2679,R004,Wok This Way,Chinese,Mumbai,1,406,427.52,27,2.7,Wallet,Delivered,2024-01-29 11:47:00,True
+ZOM00002,USR9928,R007,Taco Fiesta,Mexican,Bangalore,2,641,1251.05,34,3.2,UPI,Delivered,2024-01-04 17:12:00,False
+ZOM00003,USR7224,R011,Andhra Spice,South Indian,Hyderabad,3,166,437.75,23,4.0,UPI,Cancelled,2024-02-13 10:05:00,False
+ZOM00004,USR6925,R013,Noodle Nirvana,Chinese,Bangalore,1,410,419.51,51,2.6,Credit Card,Delivered,2024-03-21 18:56:00,False
+ZOM00005,USR6977,R008,Sushi Sutra,Japanese,Mumbai,1,1027,923.06,43,4.2,UPI,In Progress,2024-02-28 19:53:00,False
+ZOM00006,USR4598,R018,Rajma Chawal Corner,North Indian,Delhi,2,153,322.95,32,4.4,Credit Card,Delivered,2024-02-18 13:59:00,False
+ZOM00007,USR6155,R013,Noodle Nirvana,Chinese,Bangalore,3,177,485.22,31,4.7,Wallet,Delivered,2024-03-13 23:45:00,False
+ZOM00008,USR7543,R008,Sushi Sutra,Japanese,Mumbai,5,1352,6480.13,43,2.8,Wallet,Delivered,2024-03-15 15:57:00,False
+ZOM00009,USR2040,R004,Wok This Way,Chinese,Mumbai,2,288,556.09,45,3.7,Debit Card,In Progress,2024-03-28 15:38:00,False
+ZOM00010,USR6573,R001,Biryani Blues,Biryani,Delhi,1,449,396.68,53,3.6,Debit Card,In Progress,2024-03-09 21:17:00,False
+ZOM00011,USR4258,R017,The Pancake House,Continental,Bangalore,1,789,706.83,29,3.8,Cash on Delivery,Delivered,2024-03-22 17:38:00,False
+ZOM00012,USR6038,R016,Shawarma Station,Middle Eastern,Hyderabad,1,131,120.76,39,3.9,UPI,Delivered,2024-02-16 23:53:00,False
+ZOM00013,USR3705,R003,Dosa Dynasty,South Indian,Bangalore,5,139,646.01,16,3.6,Credit Card,In Progress,2024-03-25 16:35:00,False
+ZOM00014,USR9479,R007,Taco Fiesta,Mexican,Bangalore,3,532,1572.77,36,2.7,UPI,In Progress,2024-03-24 14:28:00,False
+ZOM00015,USR2104,R019,Smoothie Republic,Beverages,Chennai,2,50,112.16,10,2.7,Credit Card,Delivered,2024-03-21 09:14:00,False
+ZOM00016,USR4981,R007,Taco Fiesta,Mexican,Bangalore,5,259,1405.57,38,3.0,UPI,Cancelled,2024-03-14 18:30:00,False
+ZOM00017,USR2612,R014,Rolls Royce,Rolls & Wraps,Delhi,4,453,1573.15,13,4.5,UPI,Delivered,2024-03-27 19:41:00,False
+ZOM00018,USR5092,R018,Rajma Chawal Corner,North Indian,Delhi,4,141,627.36,31,,Cash on Delivery,Delivered,2024-01-24 13:29:00,True
+ZOM00019,USR8956,R018,Rajma Chawal Corner,North Indian,Delhi,1,117,116.35,47,4.8,Credit Card,Cancelled,2024-01-31 11:26:00,True
+ZOM00020,USR8973,R013,Noodle Nirvana,Chinese,Bangalore,3,575,1546.36,34,4.9,Cash on Delivery,In Progress,2024-02-24 20:46:00,True
+ZOM00021,USR9701,R011,Andhra Spice,South Indian,Hyderabad,1,112,100.49,35,2.7,Credit Card,Delivered,2024-03-02 17:58:00,False
+ZOM00022,USR1651,R008,Sushi Sutra,Japanese,Mumbai,4,494,2046.77,65,4.0,Cash on Delivery,Delivered,2024-03-13 12:37:00,False
+ZOM00023,USR5915,R007,Taco Fiesta,Mexican,Bangalore,3,368,1089.83,23,4.8,UPI,Cancelled,2024-02-20 11:42:00,False
+ZOM00024,USR3170,R019,Smoothie Republic,Beverages,Chennai,1,67,75.71,22,4.7,Debit Card,Delivered,2024-01-28 17:16:00,False
+ZOM00025,USR5905,R018,Rajma Chawal Corner,North Indian,Delhi,3,383,1297.83,43,,Credit Card,Delivered,2024-03-24 17:00:00,True
+ZOM00026,USR6617,R004,Wok This Way,Chinese,Mumbai,5,284,1293.73,28,3.2,Wallet,Delivered,2024-02-06 18:13:00,False
+ZOM00027,USR6464,R002,Pizza Republic,Pizza,Mumbai,1,798,862.91,31,3.2,Wallet,In Progress,2024-02-05 09:00:00,False
+ZOM00028,USR9938,R018,Rajma Chawal Corner,North Indian,Delhi,1,127,109.32,20,3.9,Wallet,Delivered,2024-03-29 23:09:00,True
+ZOM00029,USR2684,R012,Pav Bhaji Planet,Street Food,Mumbai,1,243,232.33,16,4.7,Cash on Delivery,Delivered,2024-03-28 12:42:00,False
+ZOM00030,USR6442,R008,Sushi Sutra,Japanese,Mumbai,2,611,1325.52,63,4.2,Credit Card,Delivered,2024-02-22 09:11:00,False
+ZOM00031,USR8541,R004,Wok This Way,Chinese,Mumbai,4,164,626.41,47,4.7,Credit Card,Delivered,2024-03-01 12:12:00,False
+ZOM00032,USR6753,R013,Noodle Nirvana,Chinese,Bangalore,3,395,1235.3,52,5.0,Cash on Delivery,Delivered,2024-01-09 21:17:00,False
+ZOM00033,USR8119,R004,Wok This Way,Chinese,Mumbai,3,307,878.36,38,3.6,Cash on Delivery,Delivered,2024-02-03 09:06:00,False
+ZOM00034,USR9821,R019,Smoothie Republic,Beverages,Chennai,2,114,240.78,10,4.3,Credit Card,Delivered,2024-02-25 09:33:00,False
+ZOM00035,USR5920,R011,Andhra Spice,South Indian,Hyderabad,5,247,1237.64,38,3.3,Debit Card,In Progress,2024-01-16 20:57:00,True
+ZOM00036,USR5930,R014,Rolls Royce,Rolls & Wraps,Delhi,4,426,1655.99,35,3.3,Credit Card,Cancelled,2024-01-23 18:36:00,False
+ZOM00037,USR9375,R020,Mumbai Tiffin Box,Home Food,Mumbai,3,325,967.16,42,4.5,Credit Card,Delivered,2024-02-26 19:13:00,False
+ZOM00038,USR4680,R020,Mumbai Tiffin Box,Home Food,Mumbai,3,134,438.97,54,,UPI,Delivered,2024-01-31 19:19:00,False
+ZOM00039,USR7291,R020,Mumbai Tiffin Box,Home Food,Mumbai,1,320,319.46,41,4.1,UPI,Delivered,2024-03-21 18:12:00,False
+ZOM00040,USR2988,R008,Sushi Sutra,Japanese,Mumbai,2,1309,2583.81,49,4.2,Cash on Delivery,In Progress,2024-01-07 17:15:00,False
+ZOM00041,USR9976,R015,Curry Leaf,South Indian,Chennai,5,517,2543.06,38,,Wallet,Cancelled,2024-03-05 15:53:00,False
+ZOM00042,USR8206,R008,Sushi Sutra,Japanese,Mumbai,3,1316,3447.57,50,3.2,Debit Card,In Progress,2024-03-21 12:17:00,True
+ZOM00043,USR2052,R005,Burger Barn,Burgers,Hyderabad,2,295,574.93,32,3.7,UPI,Delivered,2024-01-20 20:13:00,False
+ZOM00044,USR1096,R013,Noodle Nirvana,Chinese,Bangalore,5,130,736.33,52,3.5,Wallet,In Progress,2024-03-14 15:30:00,False
+ZOM00045,USR8956,R018,Rajma Chawal Corner,North Indian,Delhi,5,182,781.42,33,4.2,Wallet,Delivered,2024-01-29 13:27:00,False
+ZOM00046,USR1444,R005,Burger Barn,Burgers,Hyderabad,5,372,1627.84,10,4.7,Credit Card,Delivered,2024-02-20 18:36:00,False
+ZOM00047,USR7211,R011,Andhra Spice,South Indian,Hyderabad,2,319,595.56,27,3.6,UPI,Cancelled,2024-02-13 21:56:00,True
+ZOM00048,USR1659,R018,Rajma Chawal Corner,North Indian,Delhi,1,249,MISSING,25,3.0,UPI,In Progress,2024-03-24 10:49:00,False
+ZOM00049,USR5198,R005,Burger Barn,Burgers,Hyderabad,4,441,1905.24,13,,Cash on Delivery,Delivered,2024-03-13 12:29:00,False
+ZOM00050,USR7149,R006,Kebab Kingdom,North Indian,Delhi,3,260,755.82,48,2.7,Credit Card,Delivered,2024-01-04 23:19:00,False
+ZOM00051,USR6688,R010,The Dessert Lab,Desserts,Chennai,5,135,681.63,33,2.7,Debit Card,Delivered,2024-03-13 21:02:00,False
+ZOM00052,USR8532,R016,Shawarma Station,Middle Eastern,Hyderabad,1,295,313.35,40,4.3,Debit Card,In Progress,2024-02-16 19:57:00,False
+ZOM00053,USR5022,R018,Rajma Chawal Corner,North Indian,Delhi,4,308,1354.24,31,,Wallet,Delivered,2024-03-16 13:20:00,False
+ZOM00054,USR6325,R019,Smoothie Republic,Beverages,Chennai,5,220,995.01,17,4.5,Debit Card,Delivered,2024-02-13 09:31:00,False
+ZOM00055,USR7658,R009,Chole Bhature House,North Indian,Delhi,5,95,473.37,36,4.2,Wallet,Cancelled,2024-01-25 10:15:00,False
+ZOM00056,USR7046,R003,Dosa Dynasty,South Indian,Bangalore,3,188,559.48,24,3.6,Cash on Delivery,Delivered,2024-03-29 12:19:00,False
+ZOM00057,USR4155,R015,Curry Leaf,South Indian,Chennai,3,256,725.5,23,4.9,Credit Card,Delivered,2024-01-30 10:46:00,False
+ZOM00058,USR2647,R016,Shawarma Station,Middle Eastern,Hyderabad,3,444,1464.92,28,3.4,Debit Card,Delivered,2024-03-08 18:18:00,False
+ZOM00059,USR3068,R005,Burger Barn,Burgers,Hyderabad,3,122,381.14,11,2.8,UPI,In Progress,2024-03-11 13:44:00,False
+ZOM00060,USR8827,R016,Shawarma Station,Middle Eastern,Hyderabad,4,248,877.15,15,,Wallet,Delivered,2024-01-07 13:55:00,False
+ZOM00061,USR5066,R002,Pizza Republic,Pizza,Mumbai,2,301,533.09,43,4.0,Cash on Delivery,Delivered,2024-03-13 13:05:00,False
+ZOM00062,USR1986,R013,Noodle Nirvana,Chinese,Bangalore,4,563,2326.07,34,4.9,Credit Card,Delivered,2024-03-16 15:19:00,False
+ZOM00063,USR1043,R003,Dosa Dynasty,South Indian,Bangalore,2,197,383.19,17,3.7,UPI,Delivered,2024-03-11 10:10:00,False
+ZOM00064,USR4241,R010,The Dessert Lab,Desserts,Chennai,4,110,430.12,29,4.1,Debit Card,Delivered,2024-01-30 23:16:00,True
+ZOM00065,USR8195,R006,Kebab Kingdom,North Indian,Delhi,3,759,2020.4,53,4.2,Debit Card,In Progress,2024-03-13 23:18:00,False
+ZOM00066,USR5102,R015,Curry Leaf,South Indian,Chennai,1,406,348.25,16,4.2,Cash on Delivery,In Progress,2024-02-25 20:20:00,False
+ZOM00067,USR8245,R009,Chole Bhature House,North Indian,Delhi,5,110,618.65,44,,Cash on Delivery,Cancelled,2024-01-23 16:33:00,False
+ZOM00068,USR2713,R016,Shawarma Station,Middle Eastern,Hyderabad,1,314,347.7,21,4.2,Debit Card,Cancelled,2024-02-22 14:20:00,False
+ZOM00069,USR2899,R018,Rajma Chawal Corner,North Indian,Delhi,1,302,344.6,20,3.8,UPI,In Progress,2024-02-10 13:20:00,False
+ZOM00070,USR8242,R002,Pizza Republic,Pizza,Mumbai,2,679,1463.92,29,3.9,Debit Card,Cancelled,2024-03-20 21:31:00,False
+ZOM00071,USR3594,R016,Shawarma Station,Middle Eastern,Hyderabad,1,88,83.0,30,,Wallet,Delivered,2024-03-18 21:15:00,False
+ZOM00072,USR5781,R004,Wok This Way,Chinese,Mumbai,4,245,982.61,40,4.6,Wallet,Delivered,2024-01-20 16:59:00,False
+ZOM00073,USR3236,R005,Burger Barn,Burgers,Hyderabad,4,196,869.62,39,4.5,Wallet,Delivered,2024-03-17 17:47:00,False
+ZOM00074,USR9022,R017,The Pancake House,Continental,Bangalore,3,151,502.64,29,3.7,Debit Card,In Progress,2024-02-08 22:37:00,False
+ZOM00075,USR7274,R013,Noodle Nirvana,Chinese,Bangalore,4,439,1615.64,52,2.6,Wallet,Cancelled,2024-01-25 20:15:00,False
+ZOM00076,USR6439,R005,Burger Barn,Burgers,Hyderabad,4,592,2630.64,11,3.6,Cash on Delivery,Cancelled,2024-01-17 17:37:00,True
+ZOM00077,USR5342,R005,Burger Barn,Burgers,Hyderabad,4,544,2070.61,30,4.1,Debit Card,In Progress,2024-01-20 10:30:00,False
+ZOM00078,USR5708,R011,Andhra Spice,South Indian,Hyderabad,4,364,1673.28,18,3.6,UPI,Delivered,2024-03-20 10:15:00,False
+ZOM00079,USR7141,R010,The Dessert Lab,Desserts,Chennai,1,97,94.98,18,3.5,Credit Card,Delivered,2024-01-08 13:22:00,False
+ZOM00080,USR3344,R020,Mumbai Tiffin Box,Home Food,Mumbai,4,404,1486.16,49,3.6,UPI,Cancelled,2024-01-31 16:58:00,False
+ZOM00081,USR7951,R018,Rajma Chawal Corner,North Indian,Delhi,2,107,226.22,32,3.3,Wallet,Cancelled,2024-02-14 18:19:00,True
+ZOM00082,USR1359,R013,Noodle Nirvana,Chinese,Bangalore,5,477,2726.97,43,3.2,Cash on Delivery,Delivered,2024-02-07 20:18:00,False
+ZOM00083,USR4115,R016,Shawarma Station,Middle Eastern,Hyderabad,3,191,593.78,29,4.3,Credit Card,Delivered,2024-02-15 12:40:00,False
+ZOM00084,USR3153,R002,Pizza Republic,Pizza,Mumbai,3,600,1578.67,19,4.4,Credit Card,Delivered,2024-03-15 14:46:00,True
+ZOM00085,USR5210,R018,Rajma Chawal Corner,North Indian,Delhi,3,341,1150.07,34,4.9,Debit Card,Delivered,2024-02-04 22:10:00,False
+ZOM00086,USR7511,R015,Curry Leaf,South Indian,Chennai,1,172,196.11,39,3.4,Wallet,Delivered,2024-01-29 22:43:00,False
+ZOM00087,USR7242,R004,Wok This Way,Chinese,Mumbai,4,502,2202.22,41,2.8,Credit Card,Cancelled,2024-03-27 13:37:00,True
+ZOM00088,USR8606,R018,Rajma Chawal Corner,North Indian,Delhi,3,382,1286.75,25,3.5,Credit Card,Delivered,2024-03-23 10:40:00,False
+ZOM00089,USR3222,R010,The Dessert Lab,Desserts,Chennai,4,133,514.23,11,4.9,Cash on Delivery,Cancelled,2024-01-31 23:34:00,False
+ZOM00090,USR5583,R005,Burger Barn,Burgers,Hyderabad,4,434,1492.64,13,3.6,Credit Card,Delivered,2024-03-03 18:26:00,True
+ZOM00091,USR3001,R012,Pav Bhaji Planet,Street Food,Mumbai,5,243,1378.66,11,2.7,Credit Card,In Progress,2024-02-20 13:12:00,False
+ZOM00092,USR4394,R002,Pizza Republic,Pizza,Mumbai,3,398,1224.94,22,3.1,Credit Card,In Progress,2024-03-13 12:04:00,True
+ZOM00093,USR1422,R005,Burger Barn,Burgers,Hyderabad,2,375,667.16,18,4.5,Cash on Delivery,Delivered,2024-01-23 10:42:00,True
+ZOM00094,USR2041,R009,Chole Bhature House,North Indian,Delhi,1,154,152.9,43,3.8,UPI,Cancelled,2024-02-23 17:07:00,False
+ZOM00095,USR8504,R020,Mumbai Tiffin Box,Home Food,Mumbai,1,459,478.74,53,,Wallet,Cancelled,2024-03-25 17:19:00,False
+ZOM00096,USR3430,R004,Wok This Way,Chinese,Mumbai,4,579,2014.24,22,4.1,Cash on Delivery,Delivered,2024-01-11 14:38:00,False
+ZOM00097,USR2624,R020,Mumbai Tiffin Box,Home Food,Mumbai,5,237,1289.2,42,,Cash on Delivery,Delivered,2024-03-05 18:27:00,False
+ZOM00098,USR2557,R008,Sushi Sutra,Japanese,Mumbai,4,943,3559.88,61,3.1,Credit Card,Cancelled,2024-02-28 15:26:00,True
+ZOM00099,USR1982,R003,Dosa Dynasty,South Indian,Bangalore,1,296,303.68,15,3.3,UPI,Cancelled,2024-02-17 21:08:00,False
+ZOM00100,USR9313,R014,Rolls Royce,Rolls & Wraps,Delhi,1,227,207.44,31,3.1,UPI,Delivered,2024-02-09 14:06:00,False
+ZOM00101,USR1430,R012,Pav Bhaji Planet,Street Food,Mumbai,1,202,208.61,28,4.2,UPI,Delivered,2024-01-29 21:27:00,False
+ZOM00102,USR7566,R010,The Dessert Lab,Desserts,Chennai,3,253,660.99,10,4.9,UPI,In Progress,2024-01-24 22:09:00,False
+ZOM00103,USR6314,R014,Rolls Royce,Rolls & Wraps,Delhi,4,254,1100.38,17,2.7,UPI,Delivered,2024-02-17 13:46:00,False
+ZOM00104,USR7947,R020,Mumbai Tiffin Box,Home Food,Mumbai,1,432,430.14,30,3.2,Cash on Delivery,Delivered,2024-02-04 16:42:00,False
+ZOM00105,USR1744,R004,Wok This Way,Chinese,Mumbai,3,732,2011.88,35,2.6,Credit Card,Delivered,2024-03-08 19:19:00,False
+ZOM00106,USR8055,R005,Burger Barn,Burgers,Hyderabad,3,247,668.91,20,4.3,Cash on Delivery,In Progress,2024-01-16 09:31:00,False
+ZOM00107,USR8532,R012,Pav Bhaji Planet,Street Food,Mumbai,1,263,296.23,37,3.9,Cash on Delivery,Cancelled,2024-01-06 15:01:00,False
+ZOM00108,USR8538,R014,Rolls Royce,Rolls & Wraps,Delhi,3,138,455.24,24,2.7,UPI,Delivered,2024-01-03 14:10:00,False
+ZOM00109,USR4630,R013,Noodle Nirvana,Chinese,Bangalore,5,190,902.42,37,,Cash on Delivery,Delivered,2024-02-09 20:21:00,False
+ZOM00110,USR4871,R007,Taco Fiesta,Mexican,Bangalore,3,483,1276.34,38,2.9,Credit Card,Delivered,2024-03-23 22:09:00,False
+ZOM00111,USR6295,R016,Shawarma Station,Middle Eastern,Hyderabad,4,362,1606.23,34,2.9,UPI,Cancelled,2024-03-15 16:43:00,False
+ZOM00112,USR6085,R010,The Dessert Lab,Desserts,Chennai,3,376,1115.05,10,,Debit Card,Delivered,2024-02-15 17:04:00,True
+ZOM00113,USR1672,R003,Dosa Dynasty,South Indian,Bangalore,5,379,1866.42,28,4.1,Debit Card,In Progress,2024-02-19 16:37:00,False
+ZOM00114,USR9266,R005,Burger Barn,Burgers,Hyderabad,1,329,343.42,13,,Wallet,Cancelled,2024-02-13 20:05:00,False
+ZOM00115,USR6543,R020,Mumbai Tiffin Box,Home Food,Mumbai,2,273,575.3,39,,Debit Card,Delivered,2024-02-06 15:26:00,False
+ZOM00116,USR3463,R018,Rajma Chawal Corner,North Indian,Delhi,4,215,817.01,26,2.9,Debit Card,Delivered,2024-03-25 23:38:00,False
+ZOM00117,USR6381,R013,Noodle Nirvana,Chinese,Bangalore,2,196,428.83,34,4.6,Cash on Delivery,Delivered,2024-03-12 15:41:00,False
+ZOM00118,USR4509,R014,Rolls Royce,Rolls & Wraps,Delhi,5,265,1262.09,12,3.0,Credit Card,Delivered,2024-02-16 13:11:00,True
+ZOM00119,USR6517,R004,Wok This Way,Chinese,Mumbai,5,677,3767.23,46,4.0,Credit Card,Delivered,2024-03-08 09:42:00,False
+ZOM00120,USR4891,R020,Mumbai Tiffin Box,Home Food,Mumbai,2,456,1040.48,42,4.4,Wallet,Delivered,2024-01-06 15:23:00,False
+ZOM00121,USR8564,R010,The Dessert Lab,Desserts,Chennai,4,173,747.94,19,3.8,Wallet,Delivered,2024-03-27 18:28:00,False
+ZOM00122,USR7081,R020,Mumbai Tiffin Box,Home Food,Mumbai,2,215,437.04,29,,Cash on Delivery,Delivered,2024-03-23 16:55:00,False
+ZOM00123,USR8167,R006,Kebab Kingdom,North Indian,Delhi,3,610,1605.85,58,4.5,Debit Card,Delivered,2024-03-06 11:53:00,False
+ZOM00124,USR4678,R013,Noodle Nirvana,Chinese,Bangalore,5,492,MISSING,32,4.6,Debit Card,Delivered,2024-02-19 10:23:00,True
+ZOM00125,USR8685,R010,The Dessert Lab,Desserts,Chennai,4,430,1693.48,34,,UPI,Delivered,2024-01-18 21:45:00,False
+ZOM00126,USR2821,R005,Burger Barn,Burgers,Hyderabad,5,580,3140.27,33,2.8,Credit Card,Cancelled,2024-03-18 17:27:00,False
+ZOM00127,USR1269,R020,Mumbai Tiffin Box,Home Food,Mumbai,4,119,494.84,31,4.3,Debit Card,Cancelled,2024-03-04 18:34:00,True
+ZOM00128,USR2402,R012,Pav Bhaji Planet,Street Food,Mumbai,2,352,708.96,23,4.9,Cash on Delivery,In Progress,2024-01-24 19:42:00,False
+ZOM00129,USR7338,R017,The Pancake House,Continental,Bangalore,5,169,966.94,32,2.5,UPI,Delivered,2024-03-01 09:40:00,False
+ZOM00130,USR6546,R004,Wok This Way,Chinese,Mumbai,5,465,2543.67,24,,Wallet,Cancelled,2024-01-06 14:34:00,False
+ZOM00131,USR4302,R005,Burger Barn,Burgers,Hyderabad,1,465,401.36,34,,UPI,Delivered,2024-02-28 09:18:00,False
+ZOM00132,USR4131,R017,The Pancake House,Continental,Bangalore,4,705,2639.05,35,2.6,Debit Card,Delivered,2024-02-02 09:48:00,True
+ZOM00133,USR6554,R012,Pav Bhaji Planet,Street Food,Mumbai,4,264,1206.08,33,3.7,Cash on Delivery,Delivered,2024-02-26 23:24:00,False
+ZOM00134,USR6262,R014,Rolls Royce,Rolls & Wraps,Delhi,1,300,264.23,31,3.2,Wallet,In Progress,2024-01-24 17:18:00,False
+ZOM00135,USR6776,R006,Kebab Kingdom,North Indian,Delhi,4,509,2106.15,44,4.1,UPI,Delivered,2024-01-06 20:55:00,False
+ZOM00136,USR3339,R013,Noodle Nirvana,Chinese,Bangalore,3,635,2104.26,50,3.6,Credit Card,Delivered,2024-03-27 11:01:00,False
+ZOM00137,USR3513,R012,Pav Bhaji Planet,Street Food,Mumbai,3,256,809.26,40,3.4,UPI,In Progress,2024-03-13 09:38:00,True
+ZOM00138,USR1424,R012,Pav Bhaji Planet,Street Food,Mumbai,4,220,942.22,30,3.5,Cash on Delivery,Delivered,2024-02-05 12:07:00,False
+ZOM00139,USR9047,R009,Chole Bhature House,North Indian,Delhi,4,199,724.4,39,,UPI,Cancelled,2024-02-06 20:58:00,False
+ZOM00140,USR2063,R015,Curry Leaf,South Indian,Chennai,1,514,521.71,36,3.2,Credit Card,Delivered,2024-02-10 19:22:00,False
+ZOM00141,USR9094,R017,The Pancake House,Continental,Bangalore,2,273,468.41,26,3.4,Cash on Delivery,Delivered,2024-01-18 12:50:00,False
+ZOM00142,USR7708,R003,Dosa Dynasty,South Indian,Bangalore,1,233,255.6,24,,Debit Card,Delivered,2024-03-02 17:26:00,False
+ZOM00143,USR3981,R017,The Pancake House,Continental,Bangalore,3,280,907.48,48,,Cash on Delivery,Delivered,2024-03-11 19:37:00,False
+ZOM00144,USR4694,R017,The Pancake House,Continental,Bangalore,2,460,877.5,25,4.7,UPI,Delivered,2024-01-21 14:59:00,False
+ZOM00145,USR2530,R018,Rajma Chawal Corner,North Indian,Delhi,3,134,402.31,38,,Cash on Delivery,Delivered,2024-02-08 18:34:00,False
+ZOM00146,USR1464,R020,Mumbai Tiffin Box,Home Food,Mumbai,5,259,1132.31,54,4.4,Debit Card,Delivered,2024-03-13 09:52:00,False
+ZOM00147,USR9938,R014,Rolls Royce,Rolls & Wraps,Delhi,5,407,1906.59,12,3.7,Wallet,Delivered,2024-03-04 23:40:00,False
+ZOM00148,USR6573,R002,Pizza Republic,Pizza,Mumbai,2,599,1236.33,31,4.3,Debit Card,Cancelled,2024-03-02 16:13:00,True
+ZOM00149,USR3007,R012,Pav Bhaji Planet,Street Food,Mumbai,5,347,1613.97,13,2.7,Debit Card,Cancelled,2024-02-10 12:29:00,False
+ZOM00150,USR6123,R014,Rolls Royce,Rolls & Wraps,Delhi,2,161,292.04,38,,Cash on Delivery,Cancelled,2024-02-11 23:36:00,False
+ZOM00151,USR4944,R010,The Dessert Lab,Desserts,Chennai,4,85,310.94,10,2.6,Wallet,In Progress,2024-02-20 17:29:00,False
+ZOM00152,USR5333,R016,Shawarma Station,Middle Eastern,Hyderabad,3,348,1115.26,10,3.4,Wallet,Delivered,2024-01-14 15:08:00,False
+ZOM00153,USR8378,R007,Taco Fiesta,Mexican,Bangalore,3,690,2234.19,24,5.0,Cash on Delivery,Delivered,2024-01-10 15:32:00,True
+ZOM00154,USR3363,R004,Wok This Way,Chinese,Mumbai,4,507,1844.91,45,3.8,UPI,Delivered,2024-02-13 17:23:00,True
+ZOM00155,USR9446,R011,Andhra Spice,South Indian,Hyderabad,4,352,1255.84,31,3.3,Wallet,In Progress,2024-01-20 18:57:00,False
+ZOM00156,USR5911,R010,The Dessert Lab,Desserts,Chennai,5,246,1220.74,24,,Debit Card,Delivered,2024-03-06 17:31:00,False
+ZOM00157,USR8775,R019,Smoothie Republic,Beverages,Chennai,3,252,702.82,33,4.9,Cash on Delivery,In Progress,2024-03-29 19:01:00,False
+ZOM00158,USR7229,R002,Pizza Republic,Pizza,Mumbai,5,640,2861.86,23,2.6,UPI,Delivered,2024-03-08 19:46:00,True
+ZOM00159,USR9221,R011,Andhra Spice,South Indian,Hyderabad,4,164,710.11,30,4.7,UPI,Delivered,2024-03-29 12:26:00,False
+ZOM00160,USR3837,R018,Rajma Chawal Corner,North Indian,Delhi,3,409,1212.15,33,3.9,Debit Card,In Progress,2024-03-08 15:20:00,False
+ZOM00161,USR5735,R008,Sushi Sutra,Japanese,Mumbai,3,1391,4429.52,44,3.7,Wallet,Delivered,2024-01-29 13:49:00,False
+ZOM00162,USR7464,R009,Chole Bhature House,North Indian,Delhi,3,152,499.55,38,4.5,Debit Card,Delivered,2024-03-27 17:24:00,False
+ZOM00163,USR4505,R003,Dosa Dynasty,South Indian,Bangalore,3,301,822.29,32,4.8,Debit Card,Delivered,2024-02-02 20:30:00,True
+ZOM00164,USR4697,R019,Smoothie Republic,Beverages,Chennai,2,111,231.19,10,,Wallet,Delivered,2024-03-26 23:33:00,False
+ZOM00165,USR7666,R004,Wok This Way,Chinese,Mumbai,2,130,271.93,50,3.7,Credit Card,Delivered,2024-03-11 23:10:00,False
+ZOM00166,USR1611,R002,Pizza Republic,Pizza,Mumbai,1,816,917.16,36,,Credit Card,Delivered,2024-01-30 17:47:00,False
+ZOM00167,USR1151,R013,Noodle Nirvana,Chinese,Bangalore,4,300,1127.42,54,4.8,Debit Card,Delivered,2024-02-07 23:02:00,False
+ZOM00168,USR8668,R018,Rajma Chawal Corner,North Indian,Delhi,5,322,1500.28,46,3.3,Wallet,Delivered,2024-01-18 22:32:00,False
+ZOM00169,USR4164,R001,Biryani Blues,Biryani,Delhi,3,504,1364.8,34,4.7,Wallet,In Progress,2024-03-13 19:48:00,False
+ZOM00170,USR5064,R013,Noodle Nirvana,Chinese,Bangalore,1,299,254.76,29,3.6,Debit Card,Delivered,2024-03-02 14:59:00,False
+ZOM00171,USR2017,R019,Smoothie Republic,Beverages,Chennai,1,115,120.79,25,2.9,Cash on Delivery,Delivered,2024-02-16 20:15:00,False
+ZOM00172,USR3509,R010,The Dessert Lab,Desserts,Chennai,3,388,1148.28,15,3.4,Cash on Delivery,Cancelled,2024-01-29 11:30:00,False
+ZOM00173,USR9653,R007,Taco Fiesta,Mexican,Bangalore,2,734,1557.74,42,,Cash on Delivery,Delivered,2024-01-11 17:28:00,True
+ZOM00174,USR6375,R018,Rajma Chawal Corner,North Indian,Delhi,5,173,956.99,36,4.2,Cash on Delivery,Cancelled,2024-03-09 11:10:00,True
+ZOM00175,USR8484,R017,The Pancake House,Continental,Bangalore,4,205,835.72,34,4.2,Debit Card,Delivered,2024-01-17 17:26:00,False
+ZOM00176,USR2044,R001,Biryani Blues,Biryani,Delhi,2,396,801.78,27,,UPI,Cancelled,2024-01-06 15:22:00,True
+ZOM00177,USR7887,R014,Rolls Royce,Rolls & Wraps,Delhi,2,473,910.37,16,3.6,Wallet,Cancelled,2024-03-23 20:41:00,True
+ZOM00178,USR9802,R018,Rajma Chawal Corner,North Indian,Delhi,2,404,782.08,45,,Credit Card,Delivered,2024-02-14 10:11:00,False
+ZOM00179,USR7214,R010,The Dessert Lab,Desserts,Chennai,4,418,1834.2,31,3.4,Debit Card,Delivered,2024-03-10 15:34:00,False
+ZOM00180,USR2102,R004,Wok This Way,Chinese,Mumbai,1,554,487.67,39,,Cash on Delivery,Delivered,2024-01-03 12:13:00,False
+ZOM00181,USR1924,R002,Pizza Republic,Pizza,Mumbai,4,598,2133.76,25,3.1,Cash on Delivery,Delivered,2024-03-10 12:48:00,False
+ZOM00182,USR4621,R011,Andhra Spice,South Indian,Hyderabad,2,241,469.5,45,3.9,Cash on Delivery,Delivered,2024-01-19 19:33:00,False
+ZOM00183,USR7244,R014,Rolls Royce,Rolls & Wraps,Delhi,5,333,1807.76,13,3.5,Credit Card,Delivered,2024-02-14 19:42:00,False
+ZOM00184,USR3365,R018,Rajma Chawal Corner,North Indian,Delhi,4,193,842.82,45,3.9,Wallet,In Progress,2024-01-29 13:54:00,False
+ZOM00185,USR8369,R013,Noodle Nirvana,Chinese,Bangalore,2,371,819.27,31,,Credit Card,Delivered,2024-02-12 19:05:00,False
+ZOM00186,USR4555,R020,Mumbai Tiffin Box,Home Food,Mumbai,5,107,531.69,55,3.3,UPI,Delivered,2024-01-10 12:51:00,False
+ZOM00187,USR7498,R004,Wok This Way,Chinese,Mumbai,4,373,1677.81,42,4.4,Wallet,Cancelled,2024-03-18 20:13:00,False
+ZOM00188,USR8635,R012,Pav Bhaji Planet,Street Food,Mumbai,3,193,509.28,21,3.7,Debit Card,Delivered,2024-03-06 23:31:00,False
+ZOM00189,USR1265,R014,Rolls Royce,Rolls & Wraps,Delhi,1,368,341.59,39,3.9,Wallet,Delivered,2024-01-29 20:09:00,False
+ZOM00190,USR6530,R011,Andhra Spice,South Indian,Hyderabad,2,281,521.09,35,4.9,Wallet,Cancelled,2024-02-01 16:35:00,False
+ZOM00191,USR9882,R012,Pav Bhaji Planet,Street Food,Mumbai,2,131,300.54,33,3.8,UPI,Delivered,2024-03-10 16:11:00,False
+ZOM00192,USR1149,R014,Rolls Royce,Rolls & Wraps,Delhi,2,402,736.16,19,2.7,Cash on Delivery,Cancelled,2024-01-09 20:09:00,False
+ZOM00193,USR9673,R001,Biryani Blues,Biryani,Delhi,1,372,396.8,42,3.2,Cash on Delivery,Cancelled,2024-02-22 09:01:00,False
+ZOM00194,USR9625,R006,Kebab Kingdom,North Indian,Delhi,1,248,229.58,46,4.5,UPI,Delivered,2024-01-20 12:12:00,False
+ZOM00195,USR2320,R015,Curry Leaf,South Indian,Chennai,5,224,1171.66,37,4.4,UPI,Cancelled,2024-01-29 13:43:00,False
+ZOM00196,USR2354,R018,Rajma Chawal Corner,North Indian,Delhi,4,98,391.98,38,4.5,Cash on Delivery,Delivered,2024-01-02 20:10:00,False
+ZOM00197,USR8790,R002,Pizza Republic,Pizza,Mumbai,2,365,679.87,46,4.2,Debit Card,In Progress,2024-03-29 23:36:00,False
+ZOM00198,USR7525,R002,Pizza Republic,Pizza,Mumbai,2,471,1063.2,18,3.9,Cash on Delivery,Cancelled,2024-01-27 18:09:00,False
+ZOM00199,USR2284,R018,Rajma Chawal Corner,North Indian,Delhi,3,266,798.19,42,2.6,Wallet,Delivered,2024-01-18 21:44:00,False
+ZOM00200,USR6347,R011,Andhra Spice,South Indian,Hyderabad,5,480,2061.33,36,five stars,Wallet,Delivered,2024-03-17 15:49:00,False
+ZOM00201,USR2404,R013,Noodle Nirvana,Chinese,Bangalore,4,300,1297.98,46,3.1,UPI,Delivered,2024-03-15 19:24:00,False
+ZOM00202,USR1085,R013,Noodle Nirvana,Chinese,Bangalore,2,508,1151.01,35,4.4,UPI,Delivered,2024-02-16 10:05:00,True
+ZOM00203,USR1430,R014,Rolls Royce,Rolls & Wraps,Delhi,4,365,1280.25,29,4.0,Debit Card,Cancelled,2024-03-06 15:06:00,True
+ZOM00204,USR9537,R014,Rolls Royce,Rolls & Wraps,Delhi,4,478,1722.47,14,2.8,Debit Card,Delivered,2024-03-12 23:15:00,False
+ZOM00205,USR2260,R003,Dosa Dynasty,South Indian,Bangalore,2,297,569.25,20,4.3,Wallet,In Progress,2024-02-23 13:30:00,False
+ZOM00206,USR7224,R015,Curry Leaf,South Indian,Chennai,1,169,184.42,24,3.3,Cash on Delivery,Delivered,2024-01-01 15:21:00,False
+ZOM00207,USR5775,R020,Mumbai Tiffin Box,Home Food,Mumbai,2,332,710.79,38,4.9,Credit Card,Delivered,2024-01-23 15:20:00,False
+ZOM00208,USR9939,R013,Noodle Nirvana,Chinese,Bangalore,3,226,612.9,54,2.6,Wallet,Delivered,2024-03-13 12:37:00,False
+ZOM00209,USR5961,R010,The Dessert Lab,Desserts,Chennai,1,283,261.1,29,4.3,Wallet,Delivered,2024-03-04 11:40:00,False
+ZOM00210,USR7853,R020,Mumbai Tiffin Box,Home Food,Mumbai,4,385,1560.16,40,3.4,Cash on Delivery,In Progress,2024-03-09 17:59:00,False
+ZOM00211,USR1725,R003,Dosa Dynasty,South Indian,Bangalore,1,202,205.83,33,4.1,Debit Card,Cancelled,2024-03-26 14:10:00,True
+ZOM00212,USR4621,R004,Wok This Way,Chinese,Mumbai,3,352,1038.82,36,4.4,Cash on Delivery,In Progress,2024-03-07 17:37:00,False
+ZOM00213,USR2901,R001,Biryani Blues,Biryani,Delhi,4,153,672.83,34,3.4,Debit Card,Cancelled,2024-02-23 23:05:00,False
+ZOM00214,USR8412,R017,The Pancake House,Continental,Bangalore,4,505,1910.26,35,4.5,UPI,Delivered,2024-01-13 16:46:00,False
+ZOM00215,USR6422,R004,Wok This Way,Chinese,Mumbai,2,374,761.43,36,3.1,Wallet,Delivered,2024-01-23 17:10:00,False
+ZOM00216,USR8365,R014,Rolls Royce,Rolls & Wraps,Delhi,4,94,386.4,35,4.3,Credit Card,Delivered,2024-03-19 23:12:00,False
+ZOM00217,USR6340,R003,Dosa Dynasty,South Indian,Bangalore,5,127,577.29,37,,Wallet,In Progress,2024-03-09 11:23:00,False
+ZOM00218,USR6700,R011,Andhra Spice,South Indian,Hyderabad,5,285,1361.72,36,2.9,Debit Card,In Progress,2024-02-20 18:07:00,False
+ZOM00219,USR7116,R005,Burger Barn,Burgers,Hyderabad,3,159,504.68,17,3.5,Credit Card,In Progress,2024-02-09 10:11:00,False
+ZOM00220,USR3838,R006,Kebab Kingdom,North Indian,Delhi,4,800,3252.72,47,2.9,Debit Card,Cancelled,2024-03-29 23:41:00,False
+ZOM00221,USR9281,R012,Pav Bhaji Planet,Street Food,Mumbai,1,308,322.14,14,3.7,Wallet,Cancelled,2024-01-25 22:24:00,False
+ZOM00222,USR5503,R019,Smoothie Republic,Beverages,Chennai,1,252,231.2,29,4.5,Cash on Delivery,Cancelled,2024-01-29 13:02:00,False
+ZOM00223,USR9880,R004,Wok This Way,Chinese,Mumbai,5,241,1321.62,28,,Wallet,In Progress,2024-03-10 22:23:00,False
+ZOM00224,USR5877,R014,Rolls Royce,Rolls & Wraps,Delhi,1,456,507.27,38,,Debit Card,Delivered,2024-03-24 21:15:00,False
+ZOM00225,USR6744,R003,Dosa Dynasty,South Indian,Bangalore,4,135,598.49,36,3.6,Cash on Delivery,Delivered,2024-01-31 12:51:00,False
+ZOM00226,USR9827,R007,Taco Fiesta,Mexican,Bangalore,1,707,636.66,26,3.2,Cash on Delivery,Delivered,2024-03-09 13:38:00,False
+ZOM00227,USR5543,R017,The Pancake House,Continental,Bangalore,1,287,318.6,50,,Credit Card,Delivered,2024-02-22 23:03:00,True
+ZOM00228,USR3329,R011,Andhra Spice,South Indian,Hyderabad,2,476,974.11,43,3.5,Wallet,Delivered,2024-03-27 15:31:00,False
+ZOM00229,USR7046,R003,Dosa Dynasty,South Indian,Bangalore,4,338,1333.62,35,4.0,UPI,Cancelled,2024-02-05 20:59:00,False
+ZOM00230,USR4470,R012,Pav Bhaji Planet,Street Food,Mumbai,1,333,332.47,22,3.2,Cash on Delivery,In Progress,2024-01-28 15:52:00,True
+ZOM00231,USR8529,R016,Shawarma Station,Middle Eastern,Hyderabad,3,423,1084.85,34,2.9,Wallet,Delivered,2024-01-07 09:06:00,False
+ZOM00232,USR5945,R014,Rolls Royce,Rolls & Wraps,Delhi,2,432,775.61,41,3.2,Debit Card,Delivered,2024-01-17 23:41:00,True
+ZOM00233,USR4836,R006,Kebab Kingdom,North Indian,Delhi,1,555,543.22,50,,UPI,Delivered,2024-02-09 20:44:00,False
+ZOM00234,USR1152,R003,Dosa Dynasty,South Indian,Bangalore,2,378,644.43,19,2.8,Wallet,Delivered,2024-03-07 19:28:00,False
+ZOM00235,USR7022,R008,Sushi Sutra,Japanese,Mumbai,4,431,1921.05,58,,Credit Card,Delivered,2024-01-14 10:20:00,True
+ZOM00236,USR4490,R019,Smoothie Republic,Beverages,Chennai,1,205,212.88,25,,Wallet,In Progress,2024-01-22 16:22:00,False
+ZOM00237,USR7291,R007,Taco Fiesta,Mexican,Bangalore,1,226,215.93,19,4.5,Credit Card,Delivered,2024-01-16 18:46:00,False
+ZOM00238,USR1439,R008,Sushi Sutra,Japanese,Mumbai,5,1479,8166.8,54,3.3,Cash on Delivery,In Progress,2024-03-18 13:49:00,False
+ZOM00239,USR2847,R013,Noodle Nirvana,Chinese,Bangalore,3,165,456.55,50,2.7,UPI,Delivered,2024-01-31 16:24:00,False
+ZOM00240,USR9951,R005,Burger Barn,Burgers,Hyderabad,4,539,2274.33,36,4.9,UPI,Delivered,2024-03-13 15:23:00,False
+ZOM00241,USR9300,R001,Biryani Blues,Biryani,Delhi,3,210,589.65,26,4.4,Wallet,Cancelled,2024-01-08 21:25:00,True
+ZOM00242,USR2294,R018,Rajma Chawal Corner,North Indian,Delhi,5,385,1931.53,22,4.5,Cash on Delivery,Delivered,2024-02-05 10:19:00,False
+ZOM00243,USR2412,R003,Dosa Dynasty,South Indian,Bangalore,3,432,1461.1,25,,Cash on Delivery,In Progress,2024-01-31 09:15:00,True
+ZOM00244,USR3684,R006,Kebab Kingdom,North Indian,Delhi,1,162,161.83,52,3.8,Debit Card,Delivered,2024-01-18 20:00:00,False
+ZOM00245,USR8034,R009,Chole Bhature House,North Indian,Delhi,1,484,450.89,48,,Cash on Delivery,Delivered,2024-01-04 14:51:00,False
+ZOM00246,USR3577,R017,The Pancake House,Continental,Bangalore,3,205,569.82,35,,Cash on Delivery,Delivered,2024-03-13 11:23:00,False
+ZOM00247,USR8729,R017,The Pancake House,Continental,Bangalore,1,194,186.08,47,2.9,UPI,In Progress,2024-01-02 12:02:00,False
+ZOM00248,USR6241,R014,Rolls Royce,Rolls & Wraps,Delhi,2,244,454.51,19,,Debit Card,Delivered,2024-02-23 23:46:00,False
+ZOM00249,USR2129,R002,Pizza Republic,Pizza,Mumbai,2,377,839.28,43,4.4,Debit Card,Delivered,2024-03-07 09:25:00,True
+ZOM00250,USR5979,R015,Curry Leaf,South Indian,Chennai,1,288,308.7,21,3.4,Wallet,Delivered,2024-02-07 18:50:00,False
+ZOM00251,USR9872,R018,Rajma Chawal Corner,North Indian,Delhi,2,147,280.45,18,4.7,Debit Card,Delivered,2024-02-22 09:14:00,False
+ZOM00252,USR9061,R013,Noodle Nirvana,Chinese,Bangalore,3,216,737.65,31,2.9,Debit Card,Delivered,2024-03-08 12:26:00,True
+ZOM00253,USR2391,R008,Sushi Sutra,Japanese,Mumbai,5,1094,5602.54,57,4.1,Wallet,Delivered,2024-02-17 16:47:00,False
+ZOM00254,USR5276,R002,Pizza Republic,Pizza,Mumbai,4,827,3656.25,48,3.5,Debit Card,Delivered,2024-01-17 12:18:00,False
+ZOM00255,USR2731,R008,Sushi Sutra,Japanese,Mumbai,1,664,597.14,39,3.5,Cash on Delivery,Delivered,2024-03-15 10:09:00,False
+ZOM00256,USR2481,R007,Taco Fiesta,Mexican,Bangalore,4,439,1575.63,29,4.6,Cash on Delivery,Delivered,2024-02-03 22:07:00,False
+ZOM00257,USR9412,R011,Andhra Spice,South Indian,Hyderabad,2,133,230.01,39,4.6,Credit Card,Delivered,2024-02-01 14:25:00,False
+ZOM00258,USR2669,R015,Curry Leaf,South Indian,Chennai,5,483,2635.17,32,,UPI,Delivered,2024-02-01 10:29:00,False
+ZOM00259,USR2376,R008,Sushi Sutra,Japanese,Mumbai,2,654,1340.3,61,4.5,UPI,Delivered,2024-02-21 14:43:00,False
+ZOM00260,USR8552,R015,Curry Leaf,South Indian,Chennai,2,147,254.37,43,3.6,Wallet,Cancelled,2024-02-12 10:02:00,True
+ZOM00261,USR8307,R014,Rolls Royce,Rolls & Wraps,Delhi,2,261,582.04,18,,Cash on Delivery,In Progress,2024-01-24 13:17:00,False
+ZOM00262,USR2437,R010,The Dessert Lab,Desserts,Chennai,4,284,1060.95,36,,Credit Card,In Progress,2024-03-11 16:03:00,False
+ZOM00263,USR8940,R018,Rajma Chawal Corner,North Indian,Delhi,1,265,252.6,43,3.3,Debit Card,Delivered,2024-02-15 16:34:00,True
+ZOM00264,USR8728,R020,Mumbai Tiffin Box,Home Food,Mumbai,2,102,205.8,56,5.0,Credit Card,Delivered,2024-02-05 09:51:00,False
+ZOM00265,USR7363,R008,Sushi Sutra,Japanese,Mumbai,3,1341,3847.76,61,4.6,Credit Card,Delivered,2024-01-08 21:14:00,False
+ZOM00266,USR3328,R012,Pav Bhaji Planet,Street Food,Mumbai,5,74,377.01,32,,Wallet,In Progress,2024-03-30 14:36:00,False
+ZOM00267,USR1326,R016,Shawarma Station,Middle Eastern,Hyderabad,1,120,120.95,11,,Cash on Delivery,Delivered,2024-01-30 18:14:00,False
+ZOM00268,USR3420,R011,Andhra Spice,South Indian,Hyderabad,2,497,1019.83,44,4.4,Cash on Delivery,Delivered,2024-02-11 09:01:00,False
+ZOM00269,USR3235,R012,Pav Bhaji Planet,Street Food,Mumbai,4,360,1645.57,13,3.6,Wallet,Delivered,2024-02-13 13:20:00,False
+ZOM00270,USR3872,R018,Rajma Chawal Corner,North Indian,Delhi,5,252,1214.03,25,3.2,Credit Card,Delivered,2024-03-26 18:52:00,False
+ZOM00271,USR6213,R019,Smoothie Republic,Beverages,Chennai,4,266,1198.4,29,3.1,Cash on Delivery,Delivered,2024-03-13 09:11:00,False
+ZOM00272,USR3750,R005,Burger Barn,Burgers,Hyderabad,3,480,1498.83,12,4.6,Debit Card,Cancelled,2024-01-31 14:20:00,True
+ZOM00273,USR1020,R007,Taco Fiesta,Mexican,Bangalore,2,193,333.68,26,3.5,Credit Card,Cancelled,2024-02-02 21:06:00,False
+ZOM00274,USR4695,R013,Noodle Nirvana,Chinese,Bangalore,3,494,1332.02,28,,UPI,Delivered,2024-03-02 21:55:00,True
+ZOM00275,USR3636,R009,Chole Bhature House,North Indian,Delhi,1,127,135.84,30,4.7,UPI,Delivered,2024-01-22 23:24:00,False
+ZOM00276,USR8113,R020,Mumbai Tiffin Box,Home Food,Mumbai,4,447,1604.07,28,,Credit Card,Delivered,2024-02-25 19:10:00,False
+ZOM00277,USR2571,R018,Rajma Chawal Corner,North Indian,Delhi,5,205,886.51,39,4.6,Credit Card,Delivered,2024-02-06 13:15:00,False
+ZOM00278,USR8869,R014,Rolls Royce,Rolls & Wraps,Delhi,1,230,209.28,38,,Credit Card,Delivered,2024-03-25 19:38:00,False
+ZOM00279,USR5341,R016,Shawarma Station,Middle Eastern,Hyderabad,1,231,202.67,35,3.0,Wallet,Delivered,2024-02-20 16:31:00,False
+ZOM00280,USR5400,R002,Pizza Republic,Pizza,Mumbai,3,599,1831.64,32,,UPI,Delivered,2024-02-03 12:53:00,False
+ZOM00281,USR7342,R018,Rajma Chawal Corner,North Indian,Delhi,4,371,1625.75,25,3.8,Wallet,In Progress,2024-03-11 09:53:00,False
+ZOM00282,USR9467,R016,Shawarma Station,Middle Eastern,Hyderabad,3,114,372.83,22,4.1,UPI,Cancelled,2024-01-05 17:36:00,False
+ZOM00283,USR8133,R006,Kebab Kingdom,North Indian,Delhi,2,347,631.94,34,2.9,Cash on Delivery,Delivered,2024-01-06 15:05:00,False
+ZOM00284,USR5525,R003,Dosa Dynasty,South Indian,Bangalore,1,273,274.61,29,2.5,Cash on Delivery,In Progress,2024-02-20 17:20:00,False
+ZOM00285,USR2641,R014,Rolls Royce,Rolls & Wraps,Delhi,1,292,329.22,16,2.8,Debit Card,In Progress,2024-01-19 18:37:00,False
+ZOM00286,USR8750,R014,Rolls Royce,Rolls & Wraps,Delhi,3,276,713.11,32,2.9,Cash on Delivery,Cancelled,2024-03-03 18:38:00,True
+ZOM00287,USR7102,R011,Andhra Spice,South Indian,Hyderabad,2,112,191.76,40,3.3,Debit Card,Cancelled,2024-03-01 23:17:00,False
+ZOM00288,USR6257,R004,Wok This Way,Chinese,Mumbai,2,262,MISSING,29,4.1,Credit Card,Cancelled,2024-02-26 21:52:00,False
+ZOM00289,USR9442,R014,Rolls Royce,Rolls & Wraps,Delhi,4,468,2035.7,28,,Cash on Delivery,Cancelled,2024-02-17 22:03:00,True
+ZOM00290,USR4288,R017,The Pancake House,Continental,Bangalore,5,178,979.97,25,3.6,Debit Card,Delivered,2024-01-25 23:53:00,False
+ZOM00291,USR4963,R015,Curry Leaf,South Indian,Chennai,5,303,1457.04,35,2.9,Wallet,In Progress,2024-01-16 19:01:00,False
+ZOM00292,USR1449,R012,Pav Bhaji Planet,Street Food,Mumbai,2,192,370.93,33,,Cash on Delivery,Delivered,2024-03-29 10:18:00,False
+ZOM00293,USR1145,R008,Sushi Sutra,Japanese,Mumbai,2,800,1587.57,55,,Credit Card,In Progress,2024-02-22 17:01:00,False
+ZOM00294,USR5511,R008,Sushi Sutra,Japanese,Mumbai,3,1494,4379.55,60,3.4,Debit Card,Delivered,2024-02-09 20:45:00,False
+ZOM00295,USR7131,R017,The Pancake House,Continental,Bangalore,5,555,2826.16,38,3.2,UPI,Cancelled,2024-01-14 09:32:00,True
+ZOM00296,USR5895,R009,Chole Bhature House,North Indian,Delhi,3,531,1444.07,28,3.1,UPI,In Progress,2024-02-03 19:45:00,False
+ZOM00297,USR5250,R011,Andhra Spice,South Indian,Hyderabad,2,456,1023.33,17,4.3,Cash on Delivery,In Progress,2024-03-24 16:18:00,False
+ZOM00298,USR6873,R011,Andhra Spice,South Indian,Hyderabad,2,438,877.92,34,4.6,Cash on Delivery,Delivered,2024-03-22 21:30:00,False
+ZOM00299,USR3999,R016,Shawarma Station,Middle Eastern,Hyderabad,2,206,467.24,33,4.1,Credit Card,Delivered,2024-03-12 21:58:00,False
+ZOM00300,USR8598,R010,The Dessert Lab,Desserts,Chennai,4,243,1074.41,19,4.7,Cash on Delivery,In Progress,2024-02-03 18:18:00,False
+ZOM00301,USR7253,R003,Dosa Dynasty,South Indian,Bangalore,4,174,702.23,28,4.7,Credit Card,Delivered,2024-01-16 22:43:00,False
+ZOM00302,USR3954,R011,Andhra Spice,South Indian,Hyderabad,4,378,1638.53,45,4.1,Credit Card,Delivered,2024-02-28 11:20:00,False
+ZOM00303,USR3595,R001,Biryani Blues,Biryani,Delhi,4,240,957.0,31,2.7,Cash on Delivery,Cancelled,2024-01-22 18:48:00,False
+ZOM00304,USR4267,R013,Noodle Nirvana,Chinese,Bangalore,4,598,2557.52,37,4.7,Cash on Delivery,Delivered,2024-01-01 09:34:00,True
+ZOM00305,USR2682,R001,Biryani Blues,Biryani,Delhi,2,215,414.98,47,2.9,UPI,Delivered,2024-02-14 13:08:00,False
+ZOM00306,USR3192,R015,Curry Leaf,South Indian,Chennai,5,405,1929.46,31,3.4,Credit Card,Delivered,2024-02-13 15:56:00,False
+ZOM00307,USR1359,R013,Noodle Nirvana,Chinese,Bangalore,1,343,352.23,32,,Debit Card,Delivered,2024-01-17 12:46:00,False
+ZOM00308,USR2771,R009,Chole Bhature House,North Indian,Delhi,5,409,2139.21,21,,UPI,Cancelled,2024-03-17 09:42:00,False
+ZOM00309,USR1152,R004,Wok This Way,Chinese,Mumbai,5,383,1800.74,35,4.2,Debit Card,In Progress,2024-03-30 11:13:00,False
+ZOM00310,USR2928,R005,Burger Barn,Burgers,Hyderabad,4,524,1959.37,38,3.7,Cash on Delivery,Delivered,2024-01-14 17:46:00,False
+ZOM00311,USR1645,R017,The Pancake House,Continental,Bangalore,2,515,1044.87,42,4.2,Wallet,Delivered,2024-02-22 13:10:00,False
+ZOM00312,USR3443,R001,Biryani Blues,Biryani,Delhi,1,564,640.05,28,2.7,UPI,Delivered,2024-03-14 19:31:00,False
+ZOM00313,USR3862,R015,Curry Leaf,South Indian,Chennai,3,235,784.13,29,3.4,Debit Card,Cancelled,2024-01-07 10:52:00,False
+ZOM00314,USR3793,R004,Wok This Way,Chinese,Mumbai,1,134,127.11,47,4.9,Debit Card,Delivered,2024-01-18 19:41:00,False
+ZOM00315,USR7319,R011,Andhra Spice,South Indian,Hyderabad,2,145,306.52,29,3.6,Credit Card,Delivered,2024-02-21 16:17:00,True
+ZOM00316,USR8178,R002,Pizza Republic,Pizza,Mumbai,2,255,461.23,31,3.4,UPI,Delivered,2024-03-16 16:51:00,False
+ZOM00317,USR6148,R016,Shawarma Station,Middle Eastern,Hyderabad,1,284,242.45,24,3.8,Cash on Delivery,In Progress,2024-01-06 10:16:00,False
+ZOM00318,USR8091,R011,Andhra Spice,South Indian,Hyderabad,5,354,1855.87,39,3.4,Wallet,Delivered,2024-03-30 18:06:00,False
+ZOM00319,USR9283,R018,Rajma Chawal Corner,North Indian,Delhi,5,97,535.76,18,4.7,UPI,Cancelled,2024-03-23 23:10:00,False
+ZOM00320,USR7203,R011,Andhra Spice,South Indian,Hyderabad,3,112,326.25,33,3.6,Cash on Delivery,Cancelled,2024-01-29 17:41:00,True
+ZOM00321,USR1291,R016,Shawarma Station,Middle Eastern,Hyderabad,4,235,827.95,13,3.9,UPI,Delivered,2024-03-04 20:41:00,False
+ZOM00322,USR8474,R020,Mumbai Tiffin Box,Home Food,Mumbai,3,347,1181.65,45,2.6,Credit Card,Cancelled,2024-01-27 19:42:00,False
+ZOM00323,USR8414,R020,Mumbai Tiffin Box,Home Food,Mumbai,5,329,1454.52,50,3.1,Debit Card,Delivered,2024-03-25 14:45:00,False
+ZOM00324,USR3689,R010,The Dessert Lab,Desserts,Chennai,5,341,1701.12,19,4.4,Wallet,Delivered,2024-03-30 10:02:00,False
+ZOM00325,USR4122,R007,Taco Fiesta,Mexican,Bangalore,2,247,526.13,44,,Wallet,Delivered,2024-02-20 12:29:00,False
+ZOM00326,USR9260,R019,Smoothie Republic,Beverages,Chennai,1,246,219.04,33,3.8,UPI,In Progress,2024-02-27 16:42:00,False
+ZOM00327,USR3845,R019,Smoothie Republic,Beverages,Chennai,4,285,1218.83,21,,Wallet,In Progress,2024-01-23 20:37:00,False
+ZOM00328,USR5067,R011,Andhra Spice,South Indian,Hyderabad,5,283,1318.89,30,4.9,Wallet,Delivered,2024-03-18 23:44:00,True
+ZOM00329,USR6143,R020,Mumbai Tiffin Box,Home Food,Mumbai,5,240,1276.27,54,4.1,Credit Card,Delivered,2024-03-30 17:55:00,False
+ZOM00330,USR9888,R010,The Dessert Lab,Desserts,Chennai,3,418,1327.1,12,2.8,Debit Card,In Progress,2024-03-24 11:32:00,False
+ZOM00331,USR7920,R019,Smoothie Republic,Beverages,Chennai,4,221,965.76,28,2.6,Credit Card,Delivered,2024-03-09 13:56:00,False
+ZOM00332,USR2016,R007,Taco Fiesta,Mexican,Bangalore,3,288,913.4,24,4.4,UPI,Delivered,2024-03-28 13:09:00,False
+ZOM00333,USR7371,R004,Wok This Way,Chinese,Mumbai,5,700,3224.48,47,4.5,Debit Card,Delivered,2024-01-29 20:41:00,False
+ZOM00334,USR5117,R013,Noodle Nirvana,Chinese,Bangalore,4,430,1566.79,55,4.7,Wallet,Delivered,2024-03-11 09:00:00,False
+ZOM00335,USR4170,R012,Pav Bhaji Planet,Street Food,Mumbai,5,339,1590.34,33,,UPI,Delivered,2024-03-18 12:49:00,False
+ZOM00336,USR5329,R017,The Pancake House,Continental,Bangalore,1,535,475.63,21,3.1,Debit Card,Cancelled,2024-02-24 13:35:00,False
+ZOM00337,USR5934,R005,Burger Barn,Burgers,Hyderabad,1,177,176.5,39,3.4,Debit Card,In Progress,2024-02-11 18:03:00,False
+ZOM00338,USR9897,R006,Kebab Kingdom,North Indian,Delhi,5,219,1107.17,55,,Credit Card,Delivered,2024-03-05 11:26:00,False
+ZOM00339,USR1144,R011,Andhra Spice,South Indian,Hyderabad,3,237,628.82,23,3.1,Cash on Delivery,In Progress,2024-03-20 17:30:00,False
+ZOM00340,USR9851,R002,Pizza Republic,Pizza,Mumbai,3,539,1725.65,47,,Cash on Delivery,Delivered,2024-01-15 15:16:00,False
+ZOM00341,USR4154,R017,The Pancake House,Continental,Bangalore,4,647,2448.49,21,,UPI,Delivered,2024-02-07 23:41:00,False
+ZOM00342,USR4492,R018,Rajma Chawal Corner,North Indian,Delhi,5,73,404.96,38,2.8,Cash on Delivery,Cancelled,2024-01-09 12:42:00,False
+ZOM00343,USR2200,R003,Dosa Dynasty,South Indian,Bangalore,2,87,150.73,26,3.9,Cash on Delivery,Delivered,2024-02-12 09:05:00,False
+ZOM00344,USR1276,R014,Rolls Royce,Rolls & Wraps,Delhi,4,310,1198.89,32,,UPI,In Progress,2024-02-21 15:20:00,True
+ZOM00345,USR9238,R019,Smoothie Republic,Beverages,Chennai,1,228,201.06,32,3.3,UPI,Delivered,2024-01-10 14:59:00,False
+ZOM00346,USR3561,R015,Curry Leaf,South Indian,Chennai,4,302,1220.13,41,,Wallet,In Progress,2024-03-25 09:30:00,False
+ZOM00347,USR3316,R005,Burger Barn,Burgers,Hyderabad,3,445,1184.11,38,,Cash on Delivery,Cancelled,2024-03-23 14:00:00,False
+ZOM00348,USR9397,R003,Dosa Dynasty,South Indian,Bangalore,3,182,487.43,35,,Cash on Delivery,Delivered,2024-02-14 12:26:00,False
+ZOM00349,USR2198,R006,Kebab Kingdom,North Indian,Delhi,5,205,960.63,57,,UPI,Delivered,2024-03-11 16:41:00,False
+ZOM00350,USR2639,R016,Shawarma Station,Middle Eastern,Hyderabad,3,256,718.5,14,,Credit Card,Delivered,2024-03-26 19:15:00,False
+ZOM00351,USR6971,R011,Andhra Spice,South Indian,Hyderabad,5,424,2315.7,26,2.9,Debit Card,Delivered,2024-03-29 18:09:00,False
+ZOM00352,USR8863,R014,Rolls Royce,Rolls & Wraps,Delhi,3,264,783.17,16,3.3,Cash on Delivery,Delivered,2024-03-27 20:21:00,False
+ZOM00353,USR4218,R020,Mumbai Tiffin Box,Home Food,Mumbai,1,517,480.28,36,2.7,UPI,Delivered,2024-01-18 23:34:00,False
+ZOM00354,USR1600,R001,Biryani Blues,Biryani,Delhi,5,396,2010.65,37,5.0,Wallet,Delivered,2024-03-16 12:58:00,False
+ZOM00355,USR2483,R008,Sushi Sutra,Japanese,Mumbai,5,844,4089.33,39,4.2,Cash on Delivery,Delivered,2024-02-29 17:32:00,False
+ZOM00356,USR3395,R005,Burger Barn,Burgers,Hyderabad,4,180,770.96,15,3.4,Credit Card,Cancelled,2024-03-13 18:42:00,False
+ZOM00357,USR6918,R009,Chole Bhature House,North Indian,Delhi,3,209,605.95,21,4.7,UPI,Delivered,2024-03-26 12:33:00,True
+ZOM00358,USR7171,R017,The Pancake House,Continental,Bangalore,3,418,1311.81,38,4.1,UPI,In Progress,2024-03-10 18:11:00,False
+ZOM00359,USR8898,R008,Sushi Sutra,Japanese,Mumbai,5,1080,6027.22,46,,Credit Card,Cancelled,2024-02-14 16:50:00,False
+ZOM00360,USR3578,R003,Dosa Dynasty,South Indian,Bangalore,5,404,1936.51,20,2.8,Credit Card,Cancelled,2024-01-28 11:11:00,False
+ZOM00361,USR7732,R004,Wok This Way,Chinese,Mumbai,4,615,2107.57,35,,Cash on Delivery,In Progress,2024-01-27 18:10:00,False
+ZOM00362,USR3949,R017,The Pancake House,Continental,Bangalore,1,735,738.67,24,4.9,UPI,Delivered,2024-01-08 11:16:00,False
+ZOM00363,USR7730,R007,Taco Fiesta,Mexican,Bangalore,4,745,3070.15,30,4.6,Credit Card,In Progress,2024-03-02 11:14:00,False
+ZOM00364,USR2127,R009,Chole Bhature House,North Indian,Delhi,2,460,845.43,41,2.8,Credit Card,In Progress,2024-02-13 23:29:00,False
+ZOM00365,USR1639,R017,The Pancake House,Continental,Bangalore,4,302,1344.9,39,4.4,UPI,Cancelled,2024-01-13 11:30:00,False
+ZOM00366,USR9553,R020,Mumbai Tiffin Box,Home Food,Mumbai,5,510,2489.32,28,4.2,Wallet,Delivered,2024-03-27 19:27:00,False
+ZOM00367,USR7971,R016,Shawarma Station,Middle Eastern,Hyderabad,4,253,900.85,28,3.1,UPI,Delivered,2024-03-30 18:06:00,False
+ZOM00368,USR1116,R018,Rajma Chawal Corner,North Indian,Delhi,4,201,822.81,24,,UPI,Cancelled,2024-01-01 20:47:00,False
+ZOM00369,USR5155,R011,Andhra Spice,South Indian,Hyderabad,4,272,1010.09,20,3.9,Cash on Delivery,Delivered,2024-01-20 15:41:00,False
+ZOM00370,USR7065,R013,Noodle Nirvana,Chinese,Bangalore,2,533,1084.9,42,5.0,Cash on Delivery,Delivered,2024-03-12 16:11:00,False
+ZOM00371,USR3650,R013,Noodle Nirvana,Chinese,Bangalore,2,231,406.6,48,4.5,Cash on Delivery,In Progress,2024-01-30 16:50:00,False
+ZOM00372,USR2492,R002,Pizza Republic,Pizza,Mumbai,2,547,1200.09,48,4.0,UPI,Delivered,2024-03-22 09:51:00,False
+ZOM00373,USR9536,R012,Pav Bhaji Planet,Street Food,Mumbai,1,79,73.94,33,2.6,Credit Card,Cancelled,2024-02-19 23:25:00,False
+ZOM00374,USR9364,R007,Taco Fiesta,Mexican,Bangalore,5,416,2089.87,21,2.9,UPI,Delivered,2024-01-05 21:38:00,False
+ZOM00375,USR7474,R001,Biryani Blues,Biryani,Delhi,2,144,279.83,33,2.5,UPI,Delivered,2024-02-21 14:42:00,False
+ZOM00376,USR4187,R018,Rajma Chawal Corner,North Indian,Delhi,5,248,1223.17,29,2.5,Credit Card,Cancelled,2024-02-05 12:38:00,False
+ZOM00377,USR9409,R018,Rajma Chawal Corner,North Indian,Delhi,1,327,371.8,27,4.5,Cash on Delivery,Delivered,2024-02-13 10:51:00,False
+ZOM00378,USR8517,R013,Noodle Nirvana,Chinese,Bangalore,5,605,3189.8,49,4.7,Wallet,Delivered,2024-02-01 21:21:00,False
+ZOM00379,USR9462,R013,Noodle Nirvana,Chinese,Bangalore,2,345,697.38,50,3.2,Debit Card,Delivered,2024-02-10 15:22:00,False
+ZOM00380,USR6792,R011,Andhra Spice,South Indian,Hyderabad,1,370,338.76,46,3.0,Credit Card,Cancelled,2024-01-23 16:20:00,False
+ZOM00381,USR5091,R008,Sushi Sutra,Japanese,Mumbai,2,792,1743.83,41,4.4,UPI,Delivered,2024-01-30 12:53:00,False
+ZOM00382,USR8901,R016,Shawarma Station,Middle Eastern,Hyderabad,5,77,370.12,34,4.7,Cash on Delivery,Delivered,2024-03-10 09:54:00,False
+ZOM00383,USR9613,R017,The Pancake House,Continental,Bangalore,3,556,1817.75,27,3.9,Cash on Delivery,Delivered,2024-03-14 11:03:00,False
+ZOM00384,USR1137,R006,Kebab Kingdom,North Indian,Delhi,4,273,932.07,52,4.0,Debit Card,Delivered,2024-03-07 16:20:00,False
+ZOM00385,USR6621,R009,Chole Bhature House,North Indian,Delhi,2,370,710.24,28,3.0,Debit Card,Delivered,2024-01-31 13:30:00,False
+ZOM00386,USR4744,R009,Chole Bhature House,North Indian,Delhi,4,182,796.62,38,4.5,Cash on Delivery,Cancelled,2024-01-17 18:43:00,False
+ZOM00387,USR9185,R007,Taco Fiesta,Mexican,Bangalore,2,277,493.25,30,4.1,Cash on Delivery,Delivered,2024-01-02 11:26:00,False
+ZOM00388,USR2621,R010,The Dessert Lab,Desserts,Chennai,3,361,1144.91,35,,Debit Card,Cancelled,2024-03-13 09:25:00,False
+ZOM00389,USR5222,R004,Wok This Way,Chinese,Mumbai,4,467,1780.66,28,3.4,Cash on Delivery,Delivered,2024-02-16 14:35:00,False
+ZOM00390,USR8987,R018,Rajma Chawal Corner,North Indian,Delhi,2,215,465.44,29,2.7,Cash on Delivery,Delivered,2024-02-11 19:32:00,False
+ZOM00391,USR7631,R005,Burger Barn,Burgers,Hyderabad,2,426,941.18,35,,Credit Card,Delivered,2024-02-13 15:40:00,False
+ZOM00392,USR5444,R011,Andhra Spice,South Indian,Hyderabad,3,450,1507.02,25,4.8,Cash on Delivery,In Progress,2024-03-18 19:25:00,False
+ZOM00393,USR4844,R014,Rolls Royce,Rolls & Wraps,Delhi,2,174,364.92,39,4.3,UPI,Delivered,2024-01-03 11:46:00,False
+ZOM00394,USR1431,R004,Wok This Way,Chinese,Mumbai,1,190,205.44,49,5.0,UPI,Delivered,2024-03-01 17:03:00,False
+ZOM00395,USR8260,R003,Dosa Dynasty,South Indian,Bangalore,4,233,967.36,19,,Credit Card,Delivered,2024-02-01 20:18:00,True
+ZOM00396,USR9987,R012,Pav Bhaji Planet,Street Food,Mumbai,3,303,893.96,24,4.2,Credit Card,In Progress,2024-03-10 23:17:00,False
+ZOM00397,USR6688,R019,Smoothie Republic,Beverages,Chennai,4,183,727.97,25,2.7,Debit Card,Delivered,2024-03-22 17:19:00,False
+ZOM00398,USR3233,R005,Burger Barn,Burgers,Hyderabad,3,104,297.39,10,2.5,Wallet,Cancelled,2024-03-07 22:48:00,False
+ZOM00399,USR4089,R014,Rolls Royce,Rolls & Wraps,Delhi,3,385,1124.42,19,3.5,Credit Card,Cancelled,2024-01-01 17:23:00,False
+ZOM00400,USR5454,R008,Sushi Sutra,Japanese,Mumbai,3,411,1153.35,48,4.5,Wallet,Delivered,2024-03-21 12:33:00,False
+ZOM00401,USR8418,R006,Kebab Kingdom,North Indian,Delhi,2,446,831.02,33,3.0,UPI,Delivered,2024-03-22 16:39:00,True
+ZOM00402,USR8183,R018,Rajma Chawal Corner,North Indian,Delhi,1,165,MISSING,21,2.9,Wallet,Delivered,2024-02-06 13:08:00,False
+ZOM00403,USR6410,R010,The Dessert Lab,Desserts,Chennai,4,264,923.01,22,2.9,Debit Card,Cancelled,2024-03-30 21:02:00,True
+ZOM00404,USR1206,R016,Shawarma Station,Middle Eastern,Hyderabad,2,172,304.99,38,3.1,Wallet,Delivered,2024-02-02 22:24:00,False
+ZOM00405,USR4415,R002,Pizza Republic,Pizza,Mumbai,2,620,1229.89,41,3.3,Debit Card,Delivered,2024-01-13 17:42:00,False
+ZOM00406,USR5895,R002,Pizza Republic,Pizza,Mumbai,5,682,3101.79,21,4.7,Credit Card,Delivered,2024-02-02 16:40:00,False
+ZOM00407,USR7484,R014,Rolls Royce,Rolls & Wraps,Delhi,3,87,283.64,17,,UPI,In Progress,2024-02-05 18:07:00,False
+ZOM00408,USR9190,R016,Shawarma Station,Middle Eastern,Hyderabad,5,153,671.23,21,4.8,UPI,Delivered,2024-01-12 12:10:00,False
+ZOM00409,USR6189,R005,Burger Barn,Burgers,Hyderabad,5,504,2884.15,13,4.4,Wallet,Delivered,2024-01-17 16:14:00,True
+ZOM00410,USR8168,R013,Noodle Nirvana,Chinese,Bangalore,3,247,754.12,33,3.7,Cash on Delivery,Delivered,2024-01-06 16:45:00,False
+ZOM00411,USR3627,R011,Andhra Spice,South Indian,Hyderabad,4,227,790.56,44,,Debit Card,Delivered,2024-03-17 23:55:00,False
+ZOM00412,USR4039,R015,Curry Leaf,South Indian,Chennai,1,497,554.1,35,3.4,Cash on Delivery,Delivered,2024-03-05 15:46:00,False
+ZOM00413,USR3525,R003,Dosa Dynasty,South Indian,Bangalore,5,273,1411.29,18,4.1,UPI,Delivered,2024-03-08 19:31:00,False
+ZOM00414,USR8952,R003,Dosa Dynasty,South Indian,Bangalore,1,141,127.96,17,,Wallet,Cancelled,2024-01-05 12:06:00,False
+ZOM00415,USR2161,R019,Smoothie Republic,Beverages,Chennai,3,61,156.27,16,4.1,UPI,Cancelled,2024-01-29 18:45:00,False
+ZOM00416,USR1955,R002,Pizza Republic,Pizza,Mumbai,3,720,2369.72,41,2.6,UPI,Delivered,2024-02-23 22:23:00,True
+ZOM00417,USR4104,R007,Taco Fiesta,Mexican,Bangalore,5,223,1012.35,18,3.9,Credit Card,In Progress,2024-01-30 17:24:00,False
+ZOM00418,USR8515,R014,Rolls Royce,Rolls & Wraps,Delhi,1,472,500.68,32,2.8,Credit Card,In Progress,2024-03-14 14:43:00,False
+ZOM00419,USR6163,R011,Andhra Spice,South Indian,Hyderabad,2,360,730.82,36,4.6,Wallet,Cancelled,2024-02-26 23:22:00,False
+ZOM00420,USR5162,R011,Andhra Spice,South Indian,Hyderabad,5,210,1005.9,35,4.9,UPI,Delivered,2024-03-10 12:24:00,False
+ZOM00421,USR4635,R020,Mumbai Tiffin Box,Home Food,Mumbai,1,352,321.89,32,4.4,Debit Card,In Progress,2024-02-08 09:19:00,False
+ZOM00422,USR3557,R019,Smoothie Republic,Beverages,Chennai,5,88,392.27,10,4.0,Credit Card,Delivered,2024-01-05 16:22:00,False
+ZOM00423,USR6319,R003,Dosa Dynasty,South Indian,Bangalore,5,279,1517.58,30,,Cash on Delivery,Delivered,2024-01-28 20:04:00,False
+ZOM00424,USR6478,R010,The Dessert Lab,Desserts,Chennai,1,369,352.17,20,3.5,UPI,Delivered,2024-01-11 21:03:00,False
+ZOM00425,USR5993,R020,Mumbai Tiffin Box,Home Food,Mumbai,1,411,414.01,52,3.9,Debit Card,In Progress,2024-03-21 15:03:00,False
+ZOM00426,USR9269,R005,Burger Barn,Burgers,Hyderabad,1,443,388.52,33,4.5,Credit Card,Delivered,2024-02-20 16:48:00,False
+ZOM00427,USR7529,R016,Shawarma Station,Middle Eastern,Hyderabad,5,99,495.27,27,2.8,Credit Card,Cancelled,2024-02-21 13:05:00,False
+ZOM00428,USR9589,R016,Shawarma Station,Middle Eastern,Hyderabad,4,407,1504.07,28,,Wallet,Delivered,2024-01-26 17:39:00,False
+ZOM00429,USR6706,R019,Smoothie Republic,Beverages,Chennai,1,77,69.85,26,4.1,Debit Card,Delivered,2024-02-22 15:23:00,False
+ZOM00430,USR4825,R020,Mumbai Tiffin Box,Home Food,Mumbai,4,406,1477.69,32,4.4,UPI,Delivered,2024-02-26 09:59:00,False
+ZOM00431,USR2823,R008,Sushi Sutra,Japanese,Mumbai,5,551,2593.93,62,3.3,Cash on Delivery,Delivered,2024-02-06 09:21:00,False
+ZOM00432,USR1301,R017,The Pancake House,Continental,Bangalore,3,710,2051.15,35,3.8,Debit Card,Delivered,2024-03-20 20:09:00,True
+ZOM00433,USR2091,R007,Taco Fiesta,Mexican,Bangalore,5,401,1938.02,16,4.6,Debit Card,Delivered,2024-02-29 19:00:00,True
+ZOM00434,USR8940,R013,Noodle Nirvana,Chinese,Bangalore,2,499,1107.81,41,3.0,Cash on Delivery,Cancelled,2024-01-13 23:20:00,False
+ZOM00435,USR9027,R001,Biryani Blues,Biryani,Delhi,1,226,218.77,54,,Debit Card,Delivered,2024-03-08 13:21:00,False
+ZOM00436,USR7343,R010,The Dessert Lab,Desserts,Chennai,2,330,737.3,16,2.6,Cash on Delivery,Delivered,2024-01-08 19:16:00,False
+ZOM00437,USR9531,R011,Andhra Spice,South Indian,Hyderabad,4,423,1925.8,21,4.1,Credit Card,Cancelled,2024-01-12 20:24:00,False
+ZOM00438,USR9883,R005,Burger Barn,Burgers,Hyderabad,4,595,2117.09,19,4.0,Credit Card,Delivered,2024-03-18 14:28:00,False
+ZOM00439,USR3589,R017,The Pancake House,Continental,Bangalore,2,589,1113.5,49,4.9,UPI,Delivered,2024-01-19 19:59:00,False
+ZOM00440,USR8258,R005,Burger Barn,Burgers,Hyderabad,1,490,526.1,20,4.1,Debit Card,Delivered,2024-02-22 15:19:00,False
+ZOM00441,USR4783,R004,Wok This Way,Chinese,Mumbai,2,314,646.15,20,2.6,UPI,Cancelled,2024-03-19 18:17:00,True
+ZOM00442,USR7348,R020,Mumbai Tiffin Box,Home Food,Mumbai,4,451,1799.37,48,,Credit Card,Delivered,2024-02-17 11:54:00,True
+ZOM00443,USR4323,R001,Biryani Blues,Biryani,Delhi,3,586,1893.95,38,,Wallet,In Progress,2024-01-29 20:42:00,False
+ZOM00444,USR7232,R011,Andhra Spice,South Indian,Hyderabad,4,213,908.28,30,4.8,Cash on Delivery,In Progress,2024-02-21 21:02:00,False
+ZOM00445,USR1694,R002,Pizza Republic,Pizza,Mumbai,5,260,1447.33,32,3.8,UPI,In Progress,2024-02-28 22:56:00,False
+ZOM00446,USR5684,R002,Pizza Republic,Pizza,Mumbai,2,447,883.63,32,4.0,UPI,In Progress,2024-02-20 23:19:00,False
+ZOM00447,USR9952,R015,Curry Leaf,South Indian,Chennai,4,146,520.11,38,3.6,Credit Card,Cancelled,2024-03-05 10:11:00,False
+ZOM00448,USR3686,R007,Taco Fiesta,Mexican,Bangalore,4,216,920.6,23,,UPI,Cancelled,2024-02-11 20:41:00,False
+ZOM00449,USR7204,R003,Dosa Dynasty,South Indian,Bangalore,5,437,2218.0,24,,Credit Card,Delivered,2024-03-06 18:10:00,False
+ZOM00450,USR1840,R005,Burger Barn,Burgers,Hyderabad,2,543,1059.8,14,4.4,Wallet,Delivered,2024-01-23 21:45:00,False
+ZOM00451,USR1200,R004,Wok This Way,Chinese,Mumbai,2,332,655.76,20,3.9,UPI,In Progress,2024-03-20 21:16:00,False
+ZOM00452,USR8239,R008,Sushi Sutra,Japanese,Mumbai,2,1454,2541.07,56,3.1,Cash on Delivery,Delivered,2024-03-01 16:26:00,False
+ZOM00453,USR6718,R018,Rajma Chawal Corner,North Indian,Delhi,2,95,163.59,23,4.2,Cash on Delivery,Delivered,2024-01-19 09:41:00,False
+ZOM00454,USR5659,R003,Dosa Dynasty,South Indian,Bangalore,1,130,134.33,25,4.0,Cash on Delivery,Delivered,2024-01-23 11:43:00,False
+ZOM00455,USR6289,R019,Smoothie Republic,Beverages,Chennai,3,287,827.05,10,2.7,Wallet,In Progress,2024-01-12 21:19:00,True
+ZOM00456,USR7779,R016,Shawarma Station,Middle Eastern,Hyderabad,2,136,274.01,32,4.0,UPI,In Progress,2024-02-05 14:33:00,False
+ZOM00457,USR5705,R017,The Pancake House,Continental,Bangalore,1,644,629.91,43,3.1,Cash on Delivery,In Progress,2024-03-29 18:59:00,False
+ZOM00458,USR9154,R005,Burger Barn,Burgers,Hyderabad,5,387,1930.65,25,,Cash on Delivery,Delivered,2024-03-07 20:40:00,False
+ZOM00459,USR2932,R007,Taco Fiesta,Mexican,Bangalore,1,245,262.45,15,4.0,Wallet,Cancelled,2024-02-29 19:50:00,True
+ZOM00460,USR5614,R012,Pav Bhaji Planet,Street Food,Mumbai,5,168,778.11,10,,Debit Card,In Progress,2024-03-22 12:44:00,False
+ZOM00461,USR1477,R001,Biryani Blues,Biryani,Delhi,1,451,495.93,35,,Debit Card,Cancelled,2024-02-13 15:46:00,False
+ZOM00462,USR9797,R002,Pizza Republic,Pizza,Mumbai,2,642,1436.51,22,4.5,UPI,In Progress,2024-03-21 16:57:00,False
+ZOM00463,USR6434,R011,Andhra Spice,South Indian,Hyderabad,5,361,1967.2,17,3.4,Credit Card,Delivered,2024-01-27 18:43:00,False
+ZOM00464,USR7382,R011,Andhra Spice,South Indian,Hyderabad,4,407,1475.32,34,,Debit Card,Delivered,2024-01-22 18:38:00,False
+ZOM00465,USR5958,R009,Chole Bhature House,North Indian,Delhi,4,134,490.36,35,2.8,UPI,Delivered,2024-01-31 14:28:00,False
+ZOM00466,USR3524,R015,Curry Leaf,South Indian,Chennai,5,112,507.96,40,4.3,Cash on Delivery,Delivered,2024-03-02 23:32:00,False
+ZOM00467,USR4361,R005,Burger Barn,Burgers,Hyderabad,1,519,553.97,40,4.3,Cash on Delivery,Delivered,2024-03-07 19:08:00,True
+ZOM00468,USR2689,R002,Pizza Republic,Pizza,Mumbai,5,238,1197.35,28,3.3,Cash on Delivery,Delivered,2024-02-29 23:02:00,False
+ZOM00469,USR6228,R007,Taco Fiesta,Mexican,Bangalore,3,329,1067.77,21,3.2,Credit Card,Delivered,2024-02-06 13:34:00,True
+ZOM00470,USR6218,R020,Mumbai Tiffin Box,Home Food,Mumbai,5,350,1629.8,31,4.5,Cash on Delivery,Delivered,2024-01-27 17:22:00,False
+ZOM00471,USR1475,R010,The Dessert Lab,Desserts,Chennai,5,247,1224.16,25,2.8,UPI,Delivered,2024-02-26 09:08:00,False
+ZOM00472,USR6826,R006,Kebab Kingdom,North Indian,Delhi,5,756,3567.31,50,4.3,Cash on Delivery,Delivered,2024-03-29 20:28:00,False
+ZOM00473,USR8464,R015,Curry Leaf,South Indian,Chennai,5,167,787.5,17,4.4,Wallet,Delivered,2024-03-30 16:06:00,False
+ZOM00474,USR6412,R005,Burger Barn,Burgers,Hyderabad,5,231,1255.06,39,3.6,UPI,Delivered,2024-02-16 15:11:00,False
+ZOM00475,USR6711,R012,Pav Bhaji Planet,Street Food,Mumbai,4,296,1221.1,37,,UPI,Cancelled,2024-01-22 13:49:00,False
+ZOM00476,USR9728,R004,Wok This Way,Chinese,Mumbai,3,694,2057.62,40,3.1,Credit Card,In Progress,2024-01-10 21:19:00,False
+ZOM00477,USR8063,R016,Shawarma Station,Middle Eastern,Hyderabad,4,107,464.51,20,4.5,Cash on Delivery,Delivered,2024-01-27 22:44:00,False
+ZOM00478,USR6330,R003,Dosa Dynasty,South Indian,Bangalore,5,324,1646.77,15,2.9,Wallet,Delivered,2024-03-16 18:29:00,False
+ZOM00479,USR2483,R020,Mumbai Tiffin Box,Home Food,Mumbai,4,254,929.93,43,,Cash on Delivery,Delivered,2024-03-23 19:03:00,False
+ZOM00480,USR8326,R005,Burger Barn,Burgers,Hyderabad,4,371,1348.51,19,3.3,Cash on Delivery,Delivered,2024-02-19 18:36:00,False
+ZOM00481,USR7622,R014,Rolls Royce,Rolls & Wraps,Delhi,3,125,414.11,30,2.7,Cash on Delivery,Delivered,2024-01-02 18:32:00,True
+ZOM00482,USR4854,R018,Rajma Chawal Corner,North Indian,Delhi,3,126,370.26,45,4.1,Wallet,Cancelled,2024-02-06 22:01:00,False
+ZOM00483,USR7301,R018,Rajma Chawal Corner,North Indian,Delhi,2,409,902.25,23,3.5,Debit Card,Delivered,2024-03-01 11:12:00,True
+ZOM00484,USR3224,R003,Dosa Dynasty,South Indian,Bangalore,1,148,129.56,35,3.5,Wallet,In Progress,2024-03-03 19:27:00,False
+ZOM00485,USR8373,R020,Mumbai Tiffin Box,Home Food,Mumbai,2,319,615.93,44,3.6,UPI,In Progress,2024-02-24 17:52:00,False
+ZOM00486,USR1548,R008,Sushi Sutra,Japanese,Mumbai,5,800,4573.88,48,4.3,UPI,In Progress,2024-03-10 18:23:00,False
+ZOM00487,USR5578,R003,Dosa Dynasty,South Indian,Bangalore,2,448,886.57,35,,Cash on Delivery,Delivered,2024-03-08 22:48:00,False
+ZOM00488,USR6628,R003,Dosa Dynasty,South Indian,Bangalore,5,371,1874.5,21,,Wallet,In Progress,2024-03-19 09:57:00,False
+ZOM00489,USR1578,R019,Smoothie Republic,Beverages,Chennai,3,156,495.39,16,3.3,Cash on Delivery,Delivered,2024-02-07 13:10:00,True
+ZOM00490,USR1447,R016,Shawarma Station,Middle Eastern,Hyderabad,5,160,748.84,28,,Cash on Delivery,Delivered,2024-01-07 19:18:00,False
+ZOM00491,USR5209,R009,Chole Bhature House,North Indian,Delhi,3,157,402.36,39,,Credit Card,In Progress,2024-02-05 13:54:00,False
+ZOM00492,USR4869,R015,Curry Leaf,South Indian,Chennai,3,513,1532.04,20,4.7,Debit Card,Delivered,2024-02-03 21:44:00,False
+ZOM00493,USR4898,R020,Mumbai Tiffin Box,Home Food,Mumbai,2,515,1079.65,43,2.9,Cash on Delivery,Delivered,2024-02-22 21:24:00,True
+ZOM00494,USR5937,R009,Chole Bhature House,North Indian,Delhi,1,116,115.17,25,4.8,Credit Card,Cancelled,2024-02-29 15:30:00,False
+ZOM00495,USR1194,R013,Noodle Nirvana,Chinese,Bangalore,4,378,1416.2,29,3.5,Debit Card,In Progress,2024-03-08 22:27:00,False
+ZOM00496,USR5466,R002,Pizza Republic,Pizza,Mumbai,1,693,658.69,38,2.7,Cash on Delivery,Cancelled,2024-02-15 22:27:00,False
+ZOM00497,USR3947,R008,Sushi Sutra,Japanese,Mumbai,5,648,3058.5,51,,UPI,Delivered,2024-02-13 19:44:00,True
+ZOM00498,USR5641,R004,Wok This Way,Chinese,Mumbai,5,231,1069.03,41,,Cash on Delivery,Delivered,2024-02-27 14:14:00,True
+ZOM00499,USR2415,R020,Mumbai Tiffin Box,Home Food,Mumbai,2,393,870.05,48,,Cash on Delivery,Delivered,2024-01-16 20:07:00,False
+ZOM00500,USR8429,R006,Kebab Kingdom,North Indian,Delhi,3,451,1524.57,44,3.6,Debit Card,Delivered,2024-03-25 23:04:00,False

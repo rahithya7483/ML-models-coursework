@@ -1,0 +1,182 @@
+[
+  {
+    "id": "R001",
+    "name": "Biryani Blues",
+    "cuisine": "Biryani",
+    "city": "Delhi",
+    "rating": 4.3,
+    "avg_delivery_mins": 35,
+    "min_order": 200
+  },
+  {
+    "id": "R002",
+    "name": "Pizza Republic",
+    "cuisine": "Pizza",
+    "city": "Mumbai",
+    "rating": 4.1,
+    "avg_delivery_mins": 28,
+    "min_order": 299
+  },
+  {
+    "id": "R003",
+    "name": "Dosa Dynasty",
+    "cuisine": "South Indian",
+    "city": "Bangalore",
+    "rating": 4.5,
+    "avg_delivery_mins": 22,
+    "min_order": 150
+  },
+  {
+    "id": "R004",
+    "name": "Wok This Way",
+    "cuisine": "Chinese",
+    "city": "Mumbai",
+    "rating": 3.9,
+    "avg_delivery_mins": 30,
+    "min_order": 250
+  },
+  {
+    "id": "R005",
+    "name": "Burger Barn",
+    "cuisine": "Burgers",
+    "city": "Hyderabad",
+    "rating": 4.2,
+    "avg_delivery_mins": 20,
+    "min_order": 199
+  },
+  {
+    "id": "R006",
+    "name": "Kebab Kingdom",
+    "cuisine": "North Indian",
+    "city": "Delhi",
+    "rating": 4.4,
+    "avg_delivery_mins": 40,
+    "min_order": 300
+  },
+  {
+    "id": "R007",
+    "name": "Taco Fiesta",
+    "cuisine": "Mexican",
+    "city": "Bangalore",
+    "rating": 3.8,
+    "avg_delivery_mins": 25,
+    "min_order": 249
+  },
+  {
+    "id": "R008",
+    "name": "Sushi Sutra",
+    "cuisine": "Japanese",
+    "city": "Mumbai",
+    "rating": 4.6,
+    "avg_delivery_mins": 45,
+    "min_order": 499
+  },
+  {
+    "id": "R009",
+    "name": "Chole Bhature House",
+    "cuisine": "North Indian",
+    "city": "Delhi",
+    "rating": 4.0,
+    "avg_delivery_mins": 30,
+    "min_order": 180
+  },
+  {
+    "id": "R010",
+    "name": "The Dessert Lab",
+    "cuisine": "Desserts",
+    "city": "Chennai",
+    "rating": 4.7,
+    "avg_delivery_mins": 18,
+    "min_order": 149
+  },
+  {
+    "id": "R011",
+    "name": "Andhra Spice",
+    "cuisine": "South Indian",
+    "city": "Hyderabad",
+    "rating": 4.3,
+    "avg_delivery_mins": 27,
+    "min_order": 175
+  },
+  {
+    "id": "R012",
+    "name": "Pav Bhaji Planet",
+    "cuisine": "Street Food",
+    "city": "Mumbai",
+    "rating": 4.1,
+    "avg_delivery_mins": 20,
+    "min_order": 120
+  },
+  {
+    "id": "R013",
+    "name": "Noodle Nirvana",
+    "cuisine": "Chinese",
+    "city": "Bangalore",
+    "rating": 3.7,
+    "avg_delivery_mins": 35,
+    "min_order": 220
+  },
+  {
+    "id": "R014",
+    "name": "Rolls Royce",
+    "cuisine": "Rolls & Wraps",
+    "city": "Delhi",
+    "rating": 4.2,
+    "avg_delivery_mins": 22,
+    "min_order": 160
+  },
+  {
+    "id": "R015",
+    "name": "Curry Leaf",
+    "cuisine": "South Indian",
+    "city": "Chennai",
+    "rating": 4.4,
+    "avg_delivery_mins": 25,
+    "min_order": 200
+  },
+  {
+    "id": "R016",
+    "name": "Shawarma Station",
+    "cuisine": "Middle Eastern",
+    "city": "Hyderabad",
+    "rating": 4.0,
+    "avg_delivery_mins": 20,
+    "min_order": 149
+  },
+  {
+    "id": "R017",
+    "name": "The Pancake House",
+    "cuisine": "Continental",
+    "city": "Bangalore",
+    "rating": 4.5,
+    "avg_delivery_mins": 30,
+    "min_order": 299
+  },
+  {
+    "id": "R018",
+    "name": "Rajma Chawal Corner",
+    "cuisine": "North Indian",
+    "city": "Delhi",
+    "rating": 3.9,
+    "avg_delivery_mins": 28,
+    "min_order": 140
+  },
+  {
+    "id": "R019",
+    "name": "Smoothie Republic",
+    "cuisine": "Beverages",
+    "city": "Chennai",
+    "rating": 4.3,
+    "avg_delivery_mins": 15,
+    "min_order": 99
+  },
+  {
+    "id": "R020",
+    "name": "Mumbai Tiffin Box",
+    "cuisine": "Home Food",
+    "city": "Mumbai",
+    "rating": 4.6,
+    "avg_delivery_mins": 38,
+    "min_order": 175
+  }
+]
